@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Renovation Website</title>
+
+    <!-- ====== StyleSheet ======= -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- ====== Fonts ======= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <!-- ====== Bootstrapcdn ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    
+    <!-- =======Splidejs CDN======= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/splide.min.css">  
+</head>
+<body>
+    <!-- ==== Header === -->
+    <header class="header">
+        <div class="container">
+            <div class="link-container">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">YOURMAIL@DOMAIN.COM</a></p>
+                <p><span class="material-symbols-outlined">location_on</span><a href="#">27TH BROOKLYN NEW YORK, NY 10065</a></p>
+                <p><span class="material-symbols-outlined">call</span><a href="#">+7(111)123456789</a></p>
+            </div>
+
+            <div class="Contact">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">our contacts</a></p>
+            </div>
+
+            <div class="link-container">
+                <div class="signIn-popUp">
+                    <div class="popUp" id="openButton"><span class="material-symbols-outlined">mail</span><p>SIGN IN</p></div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==== End Header === -->
+
+    <!-- ==== Nav === -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo-container">
+                <a href="./index.html"><img src="./img/logo.png" alt="image"></a>
+            </div>
+            <div class="links-container">
+                <ul class="items-container">
+                    <li class="items dropdown"><a class="active" href="./index.html">
+                        <p>home</p>
+                    </a></li>
+                    <li class="items"><a href="./about.html">
+                        <p>about</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./services.html">
+                        <p>services</p>
+                    </a></li>
+                    <li class="items"><a href="./news.html">
+                        <p>news</p>
+                    </a></li>
+                    <li class="items"><a href="./project.html">
+                        <p>project</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./contact.html">
+                        <p>contact</p>
+                    </a></li>
+                    
+                </ul>
+                <div class="icons-container">
+                    <div class="icon dropdown" id="DropDow">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="Icon">menu
+                            </span>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="Dropdown-Content">
+                        <a href="./index.html">
+                            <p>home</p>
+                        </a>
+                        <a href="./about.html">
+                            <p>about</p>
+                        </a>
+                        <a href="./services.html">
+                            <p>services</p>
+                        </a>
+                        <a href="./news.html">
+                            <p>news</p>
+                        </a>
+                        <a href="./project.html">
+                            <p>project</p>
+                        </a>
+                        <a href="./contact.html">
+                            <p>contact</p>
+                        </a>
+                    </div>
+                    <div class="icon dropdown" id="dropdown1">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="icon1">local_mall
+                            </span>
+                            <div class="value" id="count">0</div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="head">
+                                <p>Your Cart</p>
+                            </div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content1">
+                        <div class="head">
+                            <p>Your Cart</p>
+                            <p><span id="Count">0</span>items</p>
+                        </div>
+
+                        <div class="cart-details">
+                            <div class="cart-items">
+                            </div>
+                        </div>  
+                
+                        <div class="total">
+                            <p>Subtotal:</p>
+                            <p><span class="cart-total-price">$0</span></p>
+                        </div>
+                        <br>
+                        <div class="link-items">
+                            <a href="./cart.html" class="btn">view cart</a>
+                            <a href="./checkout.html" class="btn">checkout</a>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown2">
+                        <div class="share-item item">
+                            <span class="material-symbols-outlined" id="icon2">share</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>share</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content2">
+                        <div class="social-media">
+                            <div class="links">
+                            <a href="#"><i class="fab fa-facebook"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-twitter"></i>
+                            </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-instagram"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-youtube"></i>
+                                </a>
+                            <a href=""><span class="material-symbols-outlined">
+                                straight
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown3">
+                        <div class="search-item item">
+                            <span class="material-symbols-outlined" id="icon3">search</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>search</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content3">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" onkeyup="filterAndAutocomplete()" class="searchInput" placeholder="Search...">
+                            <ul id="results"></ul>
+                            <button class="search-button" id="searchButton"><span class="material-symbols-outlined" id="icon3">search</span></button>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <a href="./cost.html" class="calculator-container">
+                    <p>Cost Calculator</p>
+                    <span class="material-symbols-outlined">Function</span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+    <!-- ==== End Nav === -->
+    
+    <div class="container noMatch">
+        <div id="noMatchMessage" style="display: none;"></div>
+    </div>
+    <!-- ==== Home === -->
+    <div class="home Text-Item" id="home">
+        <div class="slider">
+        <div class="Slide active" style="background-image: url('./img/Home1.jpg')">
+            <div class="Slide-container">
+                <div class="container">
+                <div class="caption">
+                    <div class="rgb"></div>
+                    <p><span>guaranteed high quality</span></p>
+                    <h1>Welcome to the theroof</h1>
+                    <h1><span>construction services</span></h1>
+                    <h1>company</h1>
+                    <br>
+                    <p>Welcome to The Roof, your trusted partner in construction services. We are committed to delivering high-quality results for your projects.</p>
+                    <br>
+                    <a href="./services.html">View our service</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="Slide" style="background-image: url('./img/Home2.jpg')">
+            <div class="Slide-container">
+                <div class="container">
+                <div class="caption">
+                    <div class="rgb"></div>
+                    <p><span>Architecture Project</span></p>
+                    <h1>Our New Project</h1>
+                    <h1><span>World trade center</span></h1>
+                    <br>
+                    <p>Discover our latest architectural masterpiece, the World Trade Center. We blend innovation and elegance to create iconic structures.</p>
+                    <br>
+                    <a href="./project.html">View project details</a>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="Slide" style="background-image: url('./img/Home3.jpg')">
+        <div class="Slide-container">
+            <div class="container">
+            <div class="caption">
+                <div class="rgb"></div>
+                <p><span>guaranteed high quality</span></p>
+                <h1>I need an equipment on rent?</h1>
+                <h1><span>Start today?</span></h1>
+                <br>
+                <p>Embark on your construction journey with ease. Rent top-quality equipment from us and get your project started today.</p>
+                <br>
+                <a href="./product.html">View our Shop</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </div>
+    
+    <!-- controls  -->
+    <div class="controls containar">
+        <div class="prev"><span class="material-symbols-outlined">
+            keyboard_double_arrow_left
+            </span></div>
+        <div class="next"><span class="material-symbols-outlined">
+            keyboard_double_arrow_right
+            </span></div>
+    </div>
+
+    <!-- indicators -->
+    <div class="indicator">
+    </div>
+    </div>
+    <div class="Text-container Text-Item">
+        <div class="container">
+            <div class="text">
+                <a href="./index.html">home</a>
+                <span>-</span>
+                <p>home slider</p>
+            </div>
+            <span class="material-symbols-outlined">
+                ungroup
+            </span>
+        </div>
+    </div>
+    <!-- ==== End Home === -->
+
+    <!-- ==== Services === -->
+    <div class="service-container Text-Item">
+        <div class="background"></div>
+        <img src="./img/Background.png" alt="img" class="image">
+            <div class="container">
+                <br><br>
+                <div class="text-description">
+                    <div class="description">
+                        <p>What We Do</p>
+                        <h3>We Offer Smarter & More Affordable Access To
+                            Construction Services and Equipment.
+                            We Are TheRoof.</h3>
+                    </div>
+                    <div class="description">
+                        <p>At TheRoof, we provide comprehensive construction services and top-notch equipment rentals to streamline your projects. Our goal is to make construction accessible and hassle-free for everyone.</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="services-items">
+                    <div class="service-list"> 
+                        <div class="content-container" style="background: url('./img/services1.jpg') no-repeat center center / cover;">
+                            <div class="content">
+                                <a href="./serv-single.html" class="btn">Read more</a>
+                        </div>
+                        </div>
+                    <div class="collection">
+                        <span class="material-symbols-outlined">
+                        construction
+                    </span>
+                    <br><br>
+                    <h2>Interior Renovation</h2>
+                    <p>Elevate your space with our expert interior renovation services. From design to execution, we ensure every detail is tailored to your needs.</p>
+                    <div class="line-container">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </div>
+                   </div>
+                    <div class="num"><p>01.</p></div>
+                </div>
+                    <div class="service-list"> 
+                        <div class="content-container" style="background: url('./img/services2.jpg') no-repeat center center / cover;">
+                            <div class="content">
+                                <a href="./serv-single.html" class="btn">Read more</a>
+                        </div>
+                        </div>
+                    <div class="collection"><span class="material-symbols-outlined">
+                        auto_towing
+                    </span>
+                    <br><br>
+                    <h2>General Constracting</h2>
+                    <p>Trust our team of experienced contractors to handle your general contracting needs efficiently. From project management to on-site execution, we've got you covered.</p>
+                    <div class="line-container">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </div>
+                    </div>
+                    <div class="num"><p>02.</p></div>
+                </div>
+                    <div class="service-list">
+                        <div class="content-container" style="background: url('./img/Home1.jpg') no-repeat center center / cover;">
+                            <div class="content">
+                                <a href="./serv-single.html" class="btn">Read more</a>
+                        </div>
+                        </div> 
+                    <div class="collection"><span class="material-symbols-outlined">apartment
+                    </span>
+                    <br><br>
+                    <h2>Build Engineering</h2>
+                    <p>Optimize your building's performance and efficiency with our expert engineering solutions. From structural design to energy optimization, we provide holistic engineering services.</p>
+                    <div class="line-container">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </div>
+                    </div>
+                    <div class="num"><p>03.</p></div>
+                </div>
+                </div>
+            </div>
+            <br><br><br><br>
+    </div>
+    <!-- ==== End Services === -->
+
+    <!-- ==== Banner === -->
+    <div class="banner-container Text-Item">
+            <div class="text-description">
+                <p>You need more information about our services and company capabilities?
+                </p>
+                <span></span>
+                <div class="text"></div>
+            </div>
+            <div class="btn-container">
+                <span></span>
+                <div class="btn"><a href="./services.html">View All Services</a></div>
+            </div>
+    </div>
+    <!-- ==== End Banner === -->
+
+    <br><br><br><br>
+
+    <!-- ==== About us === -->
+    <div class="about-container Text-Item">
+        <div class="container">
+            <div class="our-story">
+                <div class="head">
+                    <p>our story</p>
+                    <h2>who we are</h2>
+                    <span></span>
+                </div>
+                <br><br>
+                <div class="story">Aliquam luctus tempor orci sit amet finibus. Duis porttitor, ex ac molestie consectetur, metus tellus venenatis velit, et interdum enim lorem a purus. Fusce scelerisque, massa vitae rhoncus elementum, enim acinia pharetra?
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Qui
+                    sque varius eros ac purus dignissim. Proin eu ultrices libero.
+                </div>
+                <br>
+                <div class="btn-container">
+                    <a href="./about.html" class="Btn">
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <p>read more about us</p></a>
+                </div>
+            </div>
+            <div class="background"></div>
+            <div class="list-container">
+                <div class="image-container">
+                    <div class="banner">Theroof</div>
+                </div>
+                <div class="slider-container">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                        <div class="Card">
+                                                <div class="item">
+                                                        <div class="text">
+                                                            <h4 class="card-title">55</h4>
+                                                            <p class="card-text">Lifting Cranes</p></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="Card">
+                                                <div class="item">
+                                                        <div class="text">
+                                                            <h4 class="card-title">48</h4>
+                                                            <p class="card-text">Excavator</p></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="Card">
+                                                <div class="item">
+                                                        <div class="text">
+                                                            <h4 class="card-title">26</h4>
+                                                            <p class="card-text">Elevators</p></div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="Card">
+                                                <div class="item">
+                                                        <div class="text">
+                                                            <h4 class="card-title">71</h4>
+                                                            <p class="card-text">Caterpillars</p></div>
+                                                </div>
+                                        </div>
+                                </div>
+                            </div>
+                        <div class="icons">
+                            <div class="line"></div>
+                            <a class="btn" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <a class="btn" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        </div>
+                
+                </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    </div>
+    <!-- ==== End About us === -->
+
+    <!-- ==== Projects ==== -->
+    <div class="projects-container Text-Item">
+        <div class="container">
+            <img src="./img/projectsB.png" alt="" class="Image">
+            <div class="text-description">
+                <span></span>
+                <h2>Our latest projects</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate praesentium aliquam distinctio suscipit odit itaque alias? Officia vitae magni reiciendis, molestias sunt consectetur fuga alias optio consequatur quas ipsa cumque.</p>
+                <a href="./project.html" class="btn">View all projects</a>
+            </div>
+        </div>
+        <section class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide" style="background-image: url('./img/Project1.jpg')">
+                  <div class="button">
+                    <p>01.</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title"><a href="#">
+                        Trinity River Renovate</a></h5>
+                      <p class="card-text">
+                        Constant care and attention to the patients makes good record</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide" style="background-image: url('./img/Project2.jpg')">
+                  <div class="button">
+                    <p>02.</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title"><a href="#">
+                        White Walls House
+                        </a></h5>
+                      <p class="card-text">Constant care and attention to the patients makes good record.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide" style="background-image: url('./img/Project3.jpg')">
+                  <div class="button">
+                    <p>03.</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title"><a href="#">Project Endoran</a></h5>
+                      <p class="card-text">Constant care and attention to the patients makes good record.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide" style="background-image: url('./img/Project4.jpg')">
+                  <div class="button">
+                    <p>04.</p>
+                  </div>
+                  <div class="card">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title"><a href="#">
+                        World Trade Center</a></h5>
+                      <p class="card-text">Constant care and attention to the patients makes good record</p>
+                    </div>
+                  </div>
+                </li>              
+              </ul>
+            </div>
+        </section>
+    </div>
+    <!-- ==== Projects ==== -->
+    
+
+    <!-- ==== Choose Us ==== -->
+    <div class="chooseUs-container Text-Item">
+        <img src="./img/Background.png" alt="" class="image">
+        <br><br><br><br>
+        <div class="container">
+            <div class="text-container">
+                <p>What said about us</p>
+                <h2>Why Choose Us</h2>
+                <span></span>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ad provident accusantium, cumque eligendi maxime blanditiis laboriosam velit dolore doloremque?</p>
+                <br>
+                <br>
+            </div>
+            <div class="Button-container">
+                <div class="buttons">
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">energy</span>
+                        <div class="text">
+                            <h5>Green Energy</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">read more</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>01.</p></div>
+                    </div>
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">biotech</span>
+                        <div class="text">
+                            <h5>New Technology</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">read more</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>02.</p></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">handyman</span>
+                        <div class="text">
+                            <h5>High Grade Tools</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">read more</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>03.</p></div>
+                    </div>
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">engineering</span>
+                        <div class="text">
+                            <h5>Professional workers</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">read more</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>04.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+    <!-- ==== End Choose Us ==== -->
+
+    <!-- ==== Achievement ==== -->
+    <div class="achievement-container Text-Item">
+        <div class="achievement">
+            <div class="b-rgb">
+                <div class="container">
+                    <div class="text-item">
+                        <div class="item">
+                            <p>some facts about us</p>
+                            <h2>leading way in building and civil construction!</h2>
+                        </div>
+                        <div class="item">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus atque est nemo, asperiores 
+                                libero voluptatem. Officia iusto atque mollitia quas reiciendis impedit aperiam id eius corrupti! Tempora assumenda tenetur officia?</p>
+                            <div class="line-container">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Collection">
+                        <div class="text-collection">
+                            <div class="text-container">
+                                <p>more about us</p>
+                                <h2>15 years of quality and successful projects</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt 
+                                exercitationem voluptatibus assumenda dolores sed ea quibusdam, excepturi doloremque, numquam quisquam dele
+                                niti quos hic veritatis vitae. Laborum laboriosam est nam sint.</p>
+                                <div class="btn-container">
+                                    <a href="./contact.html" class="Btn">
+                                        <span class="material-symbols-outlined">
+                                            chevron_right
+                                        </span>
+                                        <p>request a quote</p></a>
+                                </div>
+                            </div>
+                            <div class="background"></div>
+                            <div class="Image-container">
+                                <img src="./img/About.jpg" alt="">
+                                <div class="image">
+                                    <div class="play-container">
+                                        <div class="play">
+                                            <p><span class="material-symbols-outlined" id="openButton1">
+                                                play_arrow
+                                            </span></p>
+                                        </div>
+                                        <p>video about our company</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="counter-container">
+                        <div class="list-item">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            <div class="list">
+                                <div class="counter" data-target="461">0</div>
+                                <p>finished projects</p>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            <div class="list">
+                                <div class="counter" data-target="568">0</div>
+                                <p>happy customers</p>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            <div class="list">
+                                <div class="counter" data-target="222">0</div>
+                                <p>years on the market</p>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            <div class="list">
+                                <div class="counter" data-target="55">0</div>
+                                <p>skilled professionals</p>
+                            </div>
+                        </div>
+                            
+                    </div>
+                        
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <!-- ==== End Achievement ==== -->
+
+    <br><br><br><br>
+
+    <!-- ==== Customer Reviews ==== -->
+    <div class="customer-Review Text-Item">
+        <div class="head">
+            <p>Whats said about us</p>
+            <h2>customer Reviews</h2>
+            <span></span>
+        </div>
+        <div id="Carousel-slider">
+            <section>
+                <div class="Carousel-slider">
+                    <div class="slider-item" data-href="#">
+                        <div class="items-container">
+                            <div class="items">
+                                <div class="profile-container">
+                                    <img src="./img/Reviews/Home1.jpg" alt="">
+                                    <div class="profile">
+                                    <p class="name">Chelsea Lindoph</p>
+                                    <p class="text">happy client</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sit at commodi temporibus molestiae mollitia minima quo ratione rerum eveniet?</p>
+                                <a href="#" class="btn">via facebook</a>
+                            </div>
+                            <div class="num-container">
+                                <div class="num">01.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item" data-href="#">
+                        <div class="items-container">
+                            <div class="items">
+                                <div class="profile-container">
+                                    <img src="./img/Reviews/Home2.jpg" alt="">
+                                    <div class="profile">
+                                    <p class="name">Blake Lillerd</p>
+                                    <p class="text">happy client</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sit at commodi temporibus molestiae mollitia minima quo ratione rerum eveniet?</p>
+                                <a href="#" class="btn">via facebook</a>
+                            </div>
+                            <div class="num-container">
+                                <div class="num">02.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item" data-href="#">
+                        <div class="items-container">
+                            <div class="items">
+                                <div class="profile-container">
+                                    <img src="./img/Reviews/Home3.jpg" alt="">
+                                    <div class="profile">
+                                    <p class="name">Mark Brown</p>
+                                    <p class="text">happy client</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sit at commodi temporibus molestiae mollitia minima quo ratione rerum eveniet?</p>
+                                <a href="#" class="btn">via facebook</a>
+                            </div>
+                            <div class="num-container">
+                                <div class="num">03.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item" data-href="#">
+                        <div class="items-container">
+                            <div class="items">
+                                <div class="profile-container">
+                                    <img src="./img/Reviews/Home4.jpg" alt="">
+                                    <div class="profile">
+                                    <p class="name">centa simpson</p>
+                                    <p class="text">happy client</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sit at commodi temporibus molestiae mollitia minima quo ratione rerum eveniet?</p>
+                                <a href="#" class="btn">via facebook</a>
+                            </div>
+                            <div class="num-container">
+                                <div class="num">04.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item" data-href="#">
+                        <div class="items-container">
+                            <div class="items">
+                                <div class="profile-container">
+                                    <img src="./img/Reviews/Home5.jpg" alt="">
+                                    <div class="profile">
+                                    <p class="name">Rita Mahomes</p>
+                                    <p class="text">happy client</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sit at commodi temporibus molestiae mollitia minima quo ratione rerum eveniet?</p>
+                                <a href="#" class="btn">via facebook</a>
+                            </div>
+                            <div class="num-container">
+                                <div class="num">05.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- ==== End Customer Reviews ==== -->
+
+    <br><br><br><br>
+
+    <!-- ==== subscribe ==== -->
+    <div class="subscribe-container Text-Item">
+        <div class="container">
+            <div class="text-description">
+                <h2>subscribe</h2>
+                <p>Want to be notified about our News. Just sign up and we'll send you a notification by email.</p>
+            </div>
+            <div class="forms-container">
+                <div class="forms">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <div class="btn">send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== End subscribe ==== -->
+
+    <!-- ==== footer ==== -->
+    <footer class="footer-container Text-Item">
+        <div class="container">
+            <img src="./img/About-black.png" alt="">
+            <div class="footer-links">
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate aut voluptates ex ab porro debitis veniam aliquam! Ducimus reprehenderit delectus officia labore? Obcaecati consequatur, est blanditiis magni veritatis placeat.
+                    </div>
+                    <a href="#" class="btn">
+                        <p>read more</p>
+                        <span class="material-symbols-outlined">
+                            trending_flat
+                        </span>
+                        <br>
+                    </a>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="contact">
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            phone_enabled
+                        </span><p>phone : <span>+489756412322</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            mail
+                        </span><p>Email : <span>yourmail@domain.com</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            location_on
+                        </span><p>Address : <span>USA 27TH Brooklyn NY</span></p>
+                        </div>
+                    </div>
+
+                    <div class="days-container">
+                        <div class="days">
+                            <p>monday - friday:</p>
+                            <span>8am - 6pm</span>
+                        </div>
+                        <div class="days">
+                            <p>saturday - sunday:</p>
+                            <span>9am - 3pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="site-links">
+                        <ul>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Tiling and Painting</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">House Renovation</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Household Repairs</a></li>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Interiror Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="footer-links2">
+                <div class="social-media">
+                    <p>Follow us:</p>
+                    <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div> 
+                </div>
+                <div class="buttons-container">
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            shopping_cart_checkout
+                        </span>
+                        <p>Download Pricing PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            description
+                        </span>
+                        <p>company presentation PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </footer>
+    <div class="copyright Text-Item">
+        <div class="container">
+            <div class="text-items">© <span> THEROOF </span> 2023. ALL RIGHTS RESERVED.</div>
+        <div class="links-items">
+            <a href="#">Terms of use</a>
+            <a href="#">privacy policy</a>
+            <a href="#">news</a>
+            <a href="#home">
+                <span class="material-symbols-outlined" id="home">
+                expand_less
+            </span>
+            </a>
+        </div>
+        </div>
+    </div>
+    <!-- ==== End footer ==== -->
+
+    <!-- ======= Pop-up Model ======== -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-container">
+            <div class="Modal" id="modal">
+                <div class="form-container">
+                    <form id="SignupForm">
+                    <div class="btn-container">
+                        <div class="login btn active" onclick="toggle(this, 1, 'One')">
+                            <span class="material-symbols-outlined">
+                                login
+                            </span>
+                            <p>login</p>
+                        </div>
+                        <div class="register btn" onclick="toggle(this, 2, 'Two')">
+                            <span class="material-symbols-outlined">
+                                how_to_reg
+                            </span>
+                            <p>register</p>
+                        </div>
+                    </div>
+                    <div class="signup-container One" style="display: block;">
+                        <div class="signup">
+                            <label for="email">Username or Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="check-container">
+                            <div class="item">
+                                <input type="checkbox" id="rememberMe" name="rememberMe">
+                                <p>Remember me</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">Lost your password</a>
+                            </div>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">log in</button>
+                        </div>
+                        
+                    </div>
+                    <div class="signup-container Two">
+                        <div class="signup">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="name" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="signup">
+                            <label for="email">Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">Register</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="text-container">
+                        <p>Or</p>
+                        <span>For faster login or register use your social account.</span>
+                    </div>
+                    
+                    <div class="Button-container">
+                        <button class="button">
+                        <i class="fab fa-facebook"></i>
+                        Connect with Facebook
+                        </button>
+                    </div>
+                    </form>
+
+
+                    <div class="close">
+                        <span class="material-symbols-outlined" id="CloseButton">
+                            close
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ======= End Pop-up Model ======== -->
+
+    <!-- ======= Pop-up Model1 ======== -->
+    <div class="overlay1" id="overlay1">
+        <div class="overlay-container1">
+            <div class="close">
+                <span class="material-symbols-outlined" id="CloseButton1">
+                    close
+                </span>
+            </div>    
+            <div class="Modal1" id="modal1">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./img/Video.mp4" type="video/mp4">
+                    </video>
+                </div>                                
+            </div>
+        </div>
+    </div>
+    <!-- ======= End Pop-up Model1 ======== -->
+
+    <script src="./js/app.js"></script>
+
+    <script src="./js/cart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+
+    <script>
+    // ===== Description ======
+    var activeContainer1 = 1;
+
+    function toggle(container1, containerNumber1, contentId1) {
+      if (containerNumber1 !== activeContainer1) {
+        var activeContainerElement1 = document.querySelector('.btn.active');
+        if (activeContainerElement1) {
+          activeContainerElement1.classList.remove('active');
+        }
+        container1.classList.add('active');
+        activeContainer1 = containerNumber1;
+      }
+    
+      const content1 = document.getElementsByClassName('signup-container');
+      for (let i = 0; i < content1.length; i++) {
+        content1[i].style.display = 'none';
+      }
+    
+      const selectedContent1 = document.getElementsByClassName(contentId1);
+      if (selectedContent1.length > 0) {
+        selectedContent1[0].style.display = 'block';
+    
+      }
+    }
+    // ===== End Description ======
+
+    // ===== Splidejs ======
+    var splide = new Splide( '.splide', {
+  perPage: 2,
+  type   : 'loop',
+  focus  : 'center',
+  breakpoints: {
+    800: {
+      perPage: 2,
+    },
+    640: {
+      perPage: 1,
+    },
+  },
+} );
+
+splide.mount();
+// ===== End splidejs ======
+</script>
+
+<!-- ===== Search functionality ===== -->
+<script>
+function filterAndAutocomplete() {
+    filterItems();
+    autocomplete();
+}
+
+// Get reference to the search button
+const searchButton = document.getElementById('searchButton');
+
+// Add click event listener to the search button
+searchButton.addEventListener('click', function() {
+    filterAndAutocomplete();
+});
+
+
+function filterItems() {
+    // Declare variables
+    var input, filter, items, i, txtValue, foundMatch;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    items = document.querySelectorAll('.Text-Item'); // Selecting elements with the class "text-item"
+    const noMatchMessage = document.getElementById("noMatchMessage");
+
+    // Loop through all items, and hide those that don't match the search query
+    for (i = 0; i < items.length; i++) {
+        txtValue = items[i].textContent || items[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            items[i].style.display = ""; // Show item
+            foundMatch = true;
+        } else {
+            items[i].style.display = "none"; // Hide item
+        }
+    }
+
+    // Display a message if no matches are found
+    if (!foundMatch) {
+        noMatchMessage.textContent = "No matching Content found.";
+        noMatchMessage.style.display = "block";
+    } else {
+        noMatchMessage.style.display = "none";
+    }
+}
+
+
+function autocomplete() {
+    const autocompleteInput = document.getElementById("searchInput");
+    const resultsHTML = document.getElementById("results");
+    const data = ["what we do",
+                "services", 
+                "about", 
+                "our story", 
+                "our latest projects", 
+                "why choose us", 
+                "some facts about us", 
+                "customer reviews",
+                "checkout page",
+                "product page",
+                "cart page",
+                "home page",
+                "news page",
+                "project page",
+                "about page",
+                "contact page",
+                "service page",
+                "cost page"];
+
+    let results = [];
+    const userInput = autocompleteInput.value;
+    resultsHTML.innerHTML = "";
+
+    if (userInput.length > 0) {
+        results = getResults(userInput);
+        resultsHTML.style.display = "block";
+        for (let i = 0; i < results.length; i++) {
+            resultsHTML.innerHTML += "<p>" + results[i] + "</p>";
+        }
+    }
+
+    function getResults(input) {
+        const results = [];
+        for (let i = 0; i < data.length; i++) {
+            if (input === data[i].slice(0, input.length)) {
+                results.push(data[i]);
+            }
+        }
+        return results;
+    }
+
+    resultsHTML.onclick = function (event) {
+        const setValue = event.target.innerText;
+        autocompleteInput.value = setValue;
+        this.innerHTML = "";
+
+        // Add logic to redirect to the corresponding page based on the search result
+        switch(setValue) {
+            case 'home page':
+                window.location.href = 'index.html';
+                break;
+            case 'news page':
+                window.location.href = 'news.html';
+                break;
+            case 'project page':
+                window.location.href = 'project.html';
+                break;
+            case 'about page':
+                window.location.href = 'about.html';
+                break;
+            case 'contact page':
+                window.location.href = 'contact.html';
+                break;
+            case 'cost page':
+                window.location.href = 'cost.html';
+                break;
+            case 'checkout page':
+                window.location.href = 'checkout.html';
+                break;
+            case 'product page':
+                window.location.href = 'product.html';
+                break;
+            case 'cart page':
+                window.location.href = 'cart.html';
+                break;
+            case 'service page':
+                window.location.href = 'services.html';
+                break;
+            // Add more cases for other search results
+            default:
+                break;
+        }
+    };
+}
+</script>
+<!-- ===== Search functionality ===== -->
+</body>
+</html>

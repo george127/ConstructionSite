@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <!-- ====== StyleSheet ======= -->
+    <link rel="stylesheet" href="./css/product.css">
+    
+    <!-- ====== Fonts ======= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- ====== Bootstrapcdn ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    
+    <script src="./js/cart.js"></script>
+
+</head>
+<body>
+
+    <!-- ==== Header === -->
+    <header class="header">
+        <div class="container">
+            <div class="link-container">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">YOURMAIL@DOMAIN.COM</a></p>
+                <p><span class="material-symbols-outlined">location_on</span><a href="#">27TH BROOKLYN NEW YORK, NY 10065</a></p>
+                <p><span class="material-symbols-outlined">call</span><a href="#">+7(111)123456789</a></p>
+            </div>
+
+            <div class="Contact">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">our contacts</a></p>
+            </div>
+
+            <div class="link-container">
+                <div class="signIn-popUp">
+                    <div class="popUp" id="openButton"><span class="material-symbols-outlined">mail</span><p>SIGN IN</p></div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==== End Header === -->
+
+    <!-- ==== Nav === -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo-container">
+                <a href="./index.html"><img src="./img/logo.png" alt="image"></a>
+            </div>
+            <div class="links-container">
+                <ul class="items-container">
+                    <li class="items dropdown"><a href="./index.html">
+                        <p>home</p>
+                    </a></li>
+                    <li class="items"><a href="./about.html">
+                        <p>about</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./services.html">
+                        <p>services</p>
+                    </a></li>
+                    <li class="items"><a href="./news.html">
+                        <p>news</p>
+                    </a></li>
+                    <li class="items"><a href="./project.html">
+                        <p>project</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./contact.html
+                        ">
+                        <p>contact</p>
+                    </a></li>
+                    
+                </ul>
+                <div class="icons-container">
+                    <div class="icon dropdown" id="DropDow">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="Icon">menu
+                            </span>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="Dropdown-Content">
+                        <a href="./index.html">
+                            <p>home</p>
+                        </a>
+                        <a href="./about.html">
+                            <p>about</p>
+                        </a>
+                        <a href="./services.html">
+                            <p>services</p>
+                        </a>
+                        <a href="./news.html">
+                            <p>news</p>
+                        </a>
+                        <a href="./project.html">
+                            <p>project</p>
+                        </a>
+                        <a href="./contact.html">
+                            <p>contact</p>
+                        </a>
+                    </div>
+                    <div class="icon dropdown" id="dropdown1">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="icon1">local_mall
+                            </span>
+                            <div class="value" id="count">0</div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="head">
+                                <p>Your Cart</p>
+                            </div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content1">
+                        <div class="head">
+                            <p>Your Cart</p>
+                            <p><span id="Count">0</span>items</p>
+                        </div>
+
+                        <div class="cart-details">
+                            <div class="cart-items">
+                            </div>
+                        </div>  
+                
+                        <div class="total">
+                            <p>Subtotal:</p>
+                            <p><span class="cart-total-price">$0</span></p>
+                        </div>
+                        <br>
+                        <div class="link-items">
+                            <a href="./cart.html" class="btn">view cart</a>
+                            <a href="./checkout.html" class="btn">checkout</a>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown2">
+                        <div class="share-item item">
+                            <span class="material-symbols-outlined" id="icon2">share</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>share</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content2">
+                        <div class="social-media">
+                            <div class="links">
+                            <a href="#"><i class="fab fa-facebook"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-twitter"></i>
+                            </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-instagram"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-youtube"></i>
+                                </a>
+                            <a href=""><span class="material-symbols-outlined">
+                                straight
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown3">
+                        <div class="search-item item">
+                            <span class="material-symbols-outlined" id="icon3">search</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>search</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content3">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" onkeyup="filterAndAutocomplete()" class="search-input" placeholder="Search...">
+                            <ul id="results"></ul>
+                            <button class="search-button" id="searchButton"><span class="material-symbols-outlined" id="icon3">search</span></button>
+                        </div>
+                    </div>
+                </div>
+        
+                <a href="./cost.html" class="calculator-container">
+                    <p>Cost Calculator</p>
+                    <span class="material-symbols-outlined">Function</span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+    <!-- ==== End Nav === -->
+    <div class="container noMatch">
+        <div id="noMatchMessage" style="display: none;"></div>
+    </div>
+
+    <!-- ==== Banner === -->
+    <div class="section-container Text-Item">
+        <div class="section">
+            <div class="b-rgb">
+                <div class="container">
+                    <div class="text-container">
+                        <span></span>
+                        <span></span>
+                        <h2>Our Shop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium 
+                        inventore laboriosam similique reiciendis saepe id amet totam! Deserunt, odit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Text-container Text-Item">
+        <div class="container">
+            <div class="text">
+                <a href="./index.html">home</a>
+                <span>-</span>
+                <a href="./product.html">Pages</a>
+                <span>-</span>
+                <p>our shop</p>
+            </div>
+            <span class="material-symbols-outlined">
+                ungroup
+            </span>
+        </div>
+    </div>
+    <!-- ==== End Banner === -->
+    
+    <!-- ==== Products === -->
+    <div class="product-container Text-Item">
+        <br>
+        <div class="container">
+            <div class="product">
+                <div class="cardItems shop-item Text-Item">
+                    <div class="card-body">
+                        <div class="card-item">
+                            <div class="card-title">
+                                <div class="title">
+                                    <h2 class="shop-item-title">Forced Air Electric</h2>
+                                    <p class="card-text">Sale -30%</p>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="Btn active" onclick="toggle2(this, 1, '1')">
+                                        <p>product</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle2(this, 2, '2')">
+                                        <p>Description</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle2(this, 3, '3')">
+                                        <p>Product details</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-list">                            
+                                <div class="date">
+                                    <div class="items">
+                                        <p>price:</p>
+                                        <p class="shop-item-price">$140</p>
+                                    </div>
+                                    <div class="items">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            redeem
+                                        </span>
+                                        <p>23</p>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                        <p>164</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container page 1" style="background: url('./img/news/News1.jpg') no-repeat center center / cover; display: block;">
+                        <img src="./img/news/News1.jpg" alt="img" class="shop-item-image">
+                        <div class="image">
+                            <p class="btn shop-item-button">Add Cart</p>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                    <div class="description page 2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non error iusto qui maxime molestiae amet inventore tenetur voluptates voluptatem? Omnis eveniet suscipit dignissimos officia alias natus nihil molestiae adipisci consectetur eaque rerum assumenda animi incidunt, corrupti quos. Sint ut quam minima repellendus, natus dolores, commodi provident explicabo sed sunt tempora voluptatum, temporibus ipsam vitae? Reprehenderit harum dolorum excepturi est accusamus dolorem sint cumque. Impedit laudantium doloribus nulla quae excepturi dicta quis aliquam ullam nesciunt mollitia aut, quaerat, magni dignissimos adipisci accusamus maiores consequatur ut saepe, unde minima in nihil esse deleniti distinctio. Quo harum distinctio facilis voluptatibus quidem recusandae esse.</p>
+                    </div>
+                    <div class="product-details page 3">
+                        <div class="details-container">
+                            <div class="details">
+                                <div class="items-container">
+                                    <p>Project Type</p>
+                                    <span>Office Building</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Client</p>
+                                    <span>Themeforest</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Completion Date</p>
+                                    <span>May 2021</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Project Size</p>
+                                    <span>6310 Square Feet</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Number of floors</p>
+                                    <span>6-8</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="cardItems shop-item Text-Item">
+                    <div class="card-body">
+                        <div class="card-item">
+                            <div class="card-title">
+                                <div class="title">
+                                    <h2 class="shop-item-title">Forced </h2>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="Btn active3" onclick="toggle3(this, 4, '4')">
+                                        <p>product</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle3(this, 5, '5')">
+                                        <p>Description</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle3(this, 6, '6')">
+                                        <p>Product details</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-list">                            
+                                <div class="date">
+                                    <div class="items">
+                                        <p>price:</p>
+                                        <p class="shop-item-price">$100</p>
+                                    </div>
+                                    <div class="items">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            redeem
+                                        </span>
+                                        <p>23</p>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                        <p>164</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container page3 4" style="background: url('./img/news/News2.jpg') no-repeat center center / cover; display: block;">
+                        <img src="./img/news/News2.jpg" alt="img" class="shop-item-image">
+                        <div class="image">
+                            <P class="btn shop-item-button">Add Cart</p>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                    <div class="description page3 5">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non error iusto qui maxime molestiae amet inventore tenetur voluptates voluptatem? Omnis eveniet suscipit dignissimos officia alias natus nihil molestiae adipisci consectetur eaque rerum assumenda animi incidunt, corrupti quos. Sint ut quam minima repellendus, natus dolores, commodi provident explicabo sed sunt tempora voluptatum, temporibus ipsam vitae? Reprehenderit harum dolorum excepturi est accusamus dolorem sint cumque. Impedit laudantium doloribus nulla quae excepturi dicta quis aliquam ullam nesciunt mollitia aut, quaerat, magni dignissimos adipisci accusamus maiores consequatur ut saepe, unde minima in nihil esse deleniti distinctio. Quo harum distinctio facilis voluptatibus quidem recusandae esse.</p>
+                    </div>
+                    <div class="product-details page3 6">
+                        <div class="details-container">
+                            <div class="details">
+                                <div class="items-container">
+                                    <p>Project Type</p>
+                                    <span>Office Building</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Client</p>
+                                    <span>Themeforest</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Completion Date</p>
+                                    <span>May 2021</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Project Size</p>
+                                    <span>6310 Square Feet</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Number of floors</p>
+                                    <span>6-8</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="cardItems shop-item Text-Item">
+                    <div class="card-body">
+                        <div class="card-item">
+                            <div class="card-title">
+                                <div class="title">
+                                    <h2 class="shop-item-title">Forced 1</h2>
+                                    <p class="card-text">Sale -30%</p>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="Btn active4" onclick="toggle4(this, 7, '7')">
+                                        <p>product</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle4(this, 8, '8')">
+                                        <p>Description</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle4(this, 9, '9')">
+                                        <p>Product details</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-list">                            
+                                <div class="date">
+                                    <div class="items">
+                                        <p>price:</p>
+                                        <p class="shop-item-price">$90</p>
+                                    </div>
+                                    <div class="items">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            redeem
+                                        </span>
+                                        <p>23</p>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                        <p>164</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container page4 7" style="background: url('./img/news/News3.jpg') no-repeat center center / cover; display: block;">
+                        <img src="./img/news/News3.jpg" alt="img" class="shop-item-image">
+                        <div class="image">
+                            <p class="btn shop-item-button">Add Cart</p>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                    <div class="description page4 8">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non error iusto qui maxime molestiae amet inventore tenetur voluptates voluptatem? Omnis eveniet suscipit dignissimos officia alias natus nihil molestiae adipisci consectetur eaque rerum assumenda animi incidunt, corrupti quos. Sint ut quam minima repellendus, natus dolores, commodi provident explicabo sed sunt tempora voluptatum, temporibus ipsam vitae? Reprehenderit harum dolorum excepturi est accusamus dolorem sint cumque. Impedit laudantium doloribus nulla quae excepturi dicta quis aliquam ullam nesciunt mollitia aut, quaerat, magni dignissimos adipisci accusamus maiores consequatur ut saepe, unde minima in nihil esse deleniti distinctio. Quo harum distinctio facilis voluptatibus quidem recusandae esse.</p>
+                    </div>
+                    <div class="product-details page4 9">
+                        <div class="details-container">
+                            <div class="details">
+                                <div class="items-container">
+                                    <p>Project Type</p>
+                                    <span>Office Building</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Client</p>
+                                    <span>Themeforest</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Completion Date</p>
+                                    <span>May 2021</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Project Size</p>
+                                    <span>6310 Square Feet</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Number of floors</p>
+                                    <span>6-8</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="cardItems shop-item Text-Item">
+                    <div class="card-body">
+                        <div class="card-item">
+                            <div class="card-title">
+                                <div class="title">
+                                    <h2 class="shop-item-title">Forced 2</h2>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="Btn active5" onclick="toggle5(this, 10, '10')">
+                                        <p>product</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle5(this, 11, '11')">
+                                        <p>Description</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle5(this, 12, '12')">
+                                        <p>Product details</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-list">                            
+                                <div class="date">
+                                    <div class="items">
+                                        <p>price:</p>
+                                        <p class="shop-item-price">$240</p>
+                                    </div>
+                                    <div class="items">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            redeem
+                                        </span>
+                                        <p>23</p>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                        <p>164</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container page5 10" style="background: url('./img/news/News4.jpg') no-repeat center center / cover; display: block;">
+                        <img src="./img/news/News4.jpg" alt="img" class="shop-item-image">
+                        <div class="image">
+                            <p class="btn shop-item-button">Add Cart</p>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                    <div class="description page5 11">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non error iusto qui maxime molestiae amet inventore tenetur voluptates voluptatem? Omnis eveniet suscipit dignissimos officia alias natus nihil molestiae adipisci consectetur eaque rerum assumenda animi incidunt, corrupti quos. Sint ut quam minima repellendus, natus dolores, commodi provident explicabo sed sunt tempora voluptatum, temporibus ipsam vitae? Reprehenderit harum dolorum excepturi est accusamus dolorem sint cumque. Impedit laudantium doloribus nulla quae excepturi dicta quis aliquam ullam nesciunt mollitia aut, quaerat, magni dignissimos adipisci accusamus maiores consequatur ut saepe, unde minima in nihil esse deleniti distinctio. Quo harum distinctio facilis voluptatibus quidem recusandae esse.</p>
+                    </div>
+                    <div class="product-details page5 12">
+                        <div class="details-container">
+                            <div class="details">
+                                <div class="items-container">
+                                    <p>Project Type</p>
+                                    <span>Office Building</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Client</p>
+                                    <span>Themeforest</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Completion Date</p>
+                                    <span>May 2021</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Project Size</p>
+                                    <span>6310 Square Feet</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Number of floors</p>
+                                    <span>6-8</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="cardItems shop-item Text-Item">
+                    <div class="card-body">
+                        <div class="card-item">
+                            <div class="card-title">
+                                <div class="title">
+                                    <h2 class="shop-item-title">Forced 4</h2>
+                                    <p class="card-text">Sale -30%</p>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="Btn active6" onclick="toggle6(this, 12, '13')">
+                                        <p>product</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle6(this, 13, '14')">
+                                        <p>Description</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle6(this, 14, '15')">
+                                        <p>Product details</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-list">                            
+                                <div class="date">
+                                    <div class="items">
+                                        <p>price:</p>
+                                        <p class="shop-item-price">$140</p>
+                                    </div>
+                                    <div class="items">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            redeem
+                                        </span>
+                                        <p>23</p>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                        <p>164</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container page6 13" style="background: url('./img/news/News5.jpg') no-repeat center center / cover; display: block;">
+                        <img src="./img/news/News5.jpg" alt="img" class="shop-item-image">
+                        <div class="image">
+                            <p class="btn shop-item-button">Add Cart</p>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                    <div class="description page6 14">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non error iusto qui maxime molestiae amet inventore tenetur voluptates voluptatem? Omnis eveniet suscipit dignissimos officia alias natus nihil molestiae adipisci consectetur eaque rerum assumenda animi incidunt, corrupti quos. Sint ut quam minima repellendus, natus dolores, commodi provident explicabo sed sunt tempora voluptatum, temporibus ipsam vitae? Reprehenderit harum dolorum excepturi est accusamus dolorem sint cumque. Impedit laudantium doloribus nulla quae excepturi dicta quis aliquam ullam nesciunt mollitia aut, quaerat, magni dignissimos adipisci accusamus maiores consequatur ut saepe, unde minima in nihil esse deleniti distinctio. Quo harum distinctio facilis voluptatibus quidem recusandae esse.</p>
+                    </div>
+                    <div class="product-details page6 15">
+                        <div class="details-container">
+                            <div class="details">
+                                <div class="items-container">
+                                    <p>Project Type</p>
+                                    <span>Office Building</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Client</p>
+                                    <span>Themeforest</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Completion Date</p>
+                                    <span>May 2021</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Project Size</p>
+                                    <span>6310 Square Feet</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Number of floors</p>
+                                    <span>6-8</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="cardItems shop-item Text-Item">
+                    <div class="card-body">
+                        <div class="card-item">
+                            <div class="card-title">
+                                <div class="title">
+                                    <h2 class="shop-item-title">Forced 6</h2>
+                                </div>
+                                <div class="btn-container">
+                                    <div class="Btn active7" onclick="toggle7(this, 16, '16')">
+                                        <p>product</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle7(this, 17, '17')">
+                                        <p>Description</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                    <div class="Btn" onclick="toggle7(this, 18, '18')">
+                                        <p>Product details</p>
+                                        <span class="material-symbols-outlined">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-list">                            
+                                <div class="date">
+                                    <div class="items">
+                                        <p>price:</p>
+                                        <p class="shop-item-price">$140</p>
+                                    </div>
+                                    <div class="items">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            redeem
+                                        </span>
+                                        <p>23</p>
+                                    </div>
+                                    <div class="items">
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+                                        <p>164</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container page7 16" style="background: url('./img/news/News1.jpg') no-repeat center center / cover; display: block;">
+                        <img src="./img/news/News1.jpg" alt="img" class="shop-item-image">
+                        <div class="image">
+                            <p class="btn shop-item-button">Add Cart</p>
+                        </div>
+                        <span class="line"></span>
+                    </div>
+                    <div class="description page7 17">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non error iusto qui maxime molestiae amet inventore tenetur voluptates voluptatem? Omnis eveniet suscipit dignissimos officia alias natus nihil molestiae adipisci consectetur eaque rerum assumenda animi incidunt, corrupti quos. Sint ut quam minima repellendus, natus dolores, commodi provident explicabo sed sunt tempora voluptatum, temporibus ipsam vitae? Reprehenderit harum dolorum excepturi est accusamus dolorem sint cumque. Impedit laudantium doloribus nulla quae excepturi dicta quis aliquam ullam nesciunt mollitia aut, quaerat, magni dignissimos adipisci accusamus maiores consequatur ut saepe, unde minima in nihil esse deleniti distinctio. Quo harum distinctio facilis voluptatibus quidem recusandae esse.</p>
+                    </div>
+                    <div class="product-details page7 18">
+                        <div class="details-container">
+                            <div class="details">
+                                <div class="items-container">
+                                    <p>Project Type</p>
+                                    <span>Office Building</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Client</p>
+                                    <span>Themeforest</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Completion Date</p>
+                                    <span>May 2021</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Project Size</p>
+                                    <span>6310 Square Feet</span>
+                                </div>
+                                <div class="items-container">
+                                    <p>Number of floors</p>
+                                    <span>6-8</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <!-- ==== End Products === -->
+
+    <!-- ==== subscribe ==== -->
+    <div class="subscribe-container Text-Item">
+        <div class="container">
+            <div class="text-description">
+                <h2>subscribe</h2>
+                <p>Want to be notified about our News. Just sign up and we'll send you a notification by email.</p>
+            </div>
+            <div class="forms-container">
+                <div class="forms">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <div class="btn">send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== End subscribe ==== -->
+
+
+    <!-- ==== footer ==== -->
+    <footer class="footer-container Text-Item">
+        <div class="container">
+            <img src="./img/About-black.png" alt="">
+            <div class="footer-links">
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate aut voluptates ex ab porro debitis veniam aliquam! Ducimus reprehenderit delectus officia labore? Obcaecati consequatur, est blanditiis magni veritatis placeat.
+                    </div>
+                    <a href="#" class="btn">
+                        <p>read more</p>
+                        <span class="material-symbols-outlined">
+                            trending_flat
+                        </span>
+                        <br>
+                    </a>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="contact">
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            phone_enabled
+                        </span><p>phone : <span>+489756412322</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            mail
+                        </span><p>Email : <span>yourmail@domain.com</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            location_on
+                        </span><p>Address : <span>USA 27TH Brooklyn NY</span></p>
+                        </div>
+                    </div>
+
+                    <div class="days-container">
+                        <div class="days">
+                            <p>monday - friday:</p>
+                            <span>8am - 6pm</span>
+                        </div>
+                        <div class="days">
+                            <p>saturday - sunday:</p>
+                            <span>9am - 3pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="site-links">
+                        <ul>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Tiling and Painting</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">House Renovation</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Household Repairs</a></li>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Interiror Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="footer-links2">
+                <div class="social-media">
+                    <p>Follow us:</p>
+                    <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div> 
+                </div>
+                <div class="buttons-container">
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            shopping_cart_checkout
+                        </span>
+                        <p>Download Pricing PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            description
+                        </span>
+                        <p>company presentation PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </footer>
+    <div class="copyright Text-Item">
+        <div class="container">
+            <div class="text-items">© <span> THEROOF </span> 2023. ALL RIGHTS RESERVED.</div>
+        <div class="links-items">
+            <a href="#">Terms of use</a>
+            <a href="#">privacy policy</a>
+            <a href="#">news</a>
+            <a href="#home">
+                <span class="material-symbols-outlined" id="home">
+                expand_less
+            </span>
+            </a>
+        </div>
+        </div>
+    </div>
+    <!-- ==== End footer ==== -->
+
+    <!-- ======= Pop-up Model ======== -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-container">
+            <div class="Modal" id="modal">
+                <div class="form-container">
+                    <form id="SignupForm">
+                    <div class="btn-container">
+                        <div class="login btn active" onclick="toggle(this, 1, 'One')">
+                            <span class="material-symbols-outlined">
+                                login
+                            </span>
+                            <p>login</p>
+                        </div>
+                        <div class="register btn" onclick="toggle(this, 2, 'Two')">
+                            <span class="material-symbols-outlined">
+                                how_to_reg
+                            </span>
+                            <p>register</p>
+                        </div>
+                    </div>
+                    <div class="signup-container One" style="display: block;">
+                        <div class="signup">
+                            <label for="email">Username or Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="check-container">
+                            <div class="item">
+                                <input type="checkbox" id="rememberMe" name="rememberMe">
+                                <p>Remember me</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">Lost your password</a>
+                            </div>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">log in</button>
+                        </div>
+                        
+                    </div>
+                    <div class="signup-container Two">
+                        <div class="signup">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="name" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="signup">
+                            <label for="email">Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">Register</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="text-container">
+                        <p>Or</p>
+                        <span>For faster login or register use your social account.</span>
+                    </div>
+                    
+                    <div class="Button-container">
+                        <button class="button">
+                        <i class="fab fa-facebook"></i>
+                        Connect with Facebook
+                        </button>
+                    </div>
+                    </form>
+
+
+                    <div class="close">
+                        <span class="material-symbols-outlined" id="CloseButton">
+                            close
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ======= End Pop-up Model ======== -->
+
+    <script src="./js/app.js"></script>
+
+    <script>
+        // ===== Description ======
+        var activeContainer1 = 1;
+    
+        function toggle(container1, containerNumber1, contentId1) {
+          if (containerNumber1 !== activeContainer1) {
+            var activeContainerElement1 = document.querySelector('.btn.active');
+            if (activeContainerElement1) {
+              activeContainerElement1.classList.remove('active');
+            }
+            container1.classList.add('active');
+            activeContainer1 = containerNumber1;
+          }
+        
+          const content1 = document.getElementsByClassName('signup-container');
+          for (let i = 0; i < content1.length; i++) {
+            content1[i].style.display = 'none';
+          }
+        
+          const selectedContent1 = document.getElementsByClassName(contentId1);
+          if (selectedContent1.length > 0) {
+            selectedContent1[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Description ======
+
+        // ===== Product ======
+        var activeContainer2 = 1;
+    
+        function toggle2(container2, containerNumber2, contentId2) {
+          if (containerNumber2 !== activeContainer2) {
+            var activeContainerElement2 = document.querySelector('.Btn.active');
+            if (activeContainerElement2) {
+              activeContainerElement2.classList.remove('active');
+            }
+            container2.classList.add('active');
+            activeContainer2 = containerNumber2;
+          }
+        
+          const content2 = document.getElementsByClassName('page');
+          for (let i = 0; i < content2.length; i++) {
+            content2[i].style.display = 'none';
+          }
+        
+          const selectedContent2 = document.getElementsByClassName(contentId2);
+          if (selectedContent2.length > 0) {
+            selectedContent2[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Product ======
+        
+        // ===== Product3 ======
+        var activeContainer3 = 1;
+    
+        function toggle3(container3, containerNumber3, contentId3) {
+          if (containerNumber3 !== activeContainer3) {
+            var activeContainerElement3 = document.querySelector('.Btn.active3');
+            if (activeContainerElement3) {
+              activeContainerElement3.classList.remove('active3');
+            }
+            container3.classList.add('active3');
+            activeContainer3 = containerNumber3;
+          }
+        
+          const content3 = document.getElementsByClassName('page3');
+          for (let i = 0; i < content3.length; i++) {
+            content3[i].style.display = 'none';
+          }
+        
+          const selectedContent3 = document.getElementsByClassName(contentId3);
+          if (selectedContent3.length > 0) {
+            selectedContent3[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Product ======
+
+        // ===== Product4 ======
+        var activeContainer4 = 1;
+    
+        function toggle4(container4, containerNumber4, contentId4) {
+          if (containerNumber4 !== activeContainer4) {
+            var activeContainerElement4 = document.querySelector('.Btn.active4');
+            if (activeContainerElement4) {
+              activeContainerElement4.classList.remove('active4');
+            }
+            container4.classList.add('active4');
+            activeContainer4 = containerNumber4;
+          }
+        
+          const content4 = document.getElementsByClassName('page4');
+          for (let i = 0; i < content4.length; i++) {
+            content4[i].style.display = 'none';
+          }
+        
+          const selectedContent4 = document.getElementsByClassName(contentId4);
+          if (selectedContent4.length > 0) {
+            selectedContent4[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Product ======
+
+        // ===== Product5 ======
+        var activeContainer5 = 1;
+    
+        function toggle5(container5, containerNumber5, contentId5) {
+          if (containerNumber5 !== activeContainer5) {
+            var activeContainerElement5 = document.querySelector('.Btn.active5');
+            if (activeContainerElement5) {
+              activeContainerElement5.classList.remove('active5');
+            }
+            container5.classList.add('active5');
+            activeContainer5 = containerNumber5;
+          }
+        
+          const content5= document.getElementsByClassName('page5');
+          for (let i = 0; i < content5.length; i++) {
+            content5[i].style.display = 'none';
+          }
+        
+          const selectedContent5 = document.getElementsByClassName(contentId5);
+          if (selectedContent5.length > 0) {
+            selectedContent5[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Product ======
+
+        // ===== Product6 ======
+        var activeContainer6 = 1;
+    
+        function toggle6(container6, containerNumber6, contentId6) {
+          if (containerNumber6 !== activeContainer6) {
+            var activeContainerElement6 = document.querySelector('.Btn.active6');
+            if (activeContainerElement6) {
+              activeContainerElement6.classList.remove('active6');
+            }
+            container6.classList.add('active6');
+            activeContainer6 = containerNumber6;
+          }
+        
+          const content6= document.getElementsByClassName('page6');
+          for (let i = 0; i < content6.length; i++) {
+            content6[i].style.display = 'none';
+          }
+        
+          const selectedContent6 = document.getElementsByClassName(contentId6);
+          if (selectedContent6.length > 0) {
+            selectedContent6[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Product ======
+
+        // ===== Product7 ======
+        var activeContainer7 = 1;
+    
+        function toggle7(container7, containerNumber7, contentId7) {
+          if (containerNumber7 !== activeContainer7) {
+            var activeContainerElement7 = document.querySelector('.Btn.active7');
+            if (activeContainerElement7) {
+              activeContainerElement7.classList.remove('active7');
+            }
+            container7.classList.add('active7');
+            activeContainer7 = containerNumber7;
+          }
+        
+          const content7= document.getElementsByClassName('page7');
+          for (let i = 0; i < content7.length; i++) {
+            content7[i].style.display = 'none';
+          }
+        
+          const selectedContent7 = document.getElementsByClassName(contentId7);
+          if (selectedContent7.length > 0) {
+            selectedContent7[0].style.display = 'block';
+        
+          }
+        }
+         // ===== End Product ======
+</script>
+
+<!-- ===== Search functionality ===== -->
+<script>
+    function filterAndAutocomplete() {
+        filterItems();
+        autocomplete();
+    }
+    
+    // Get reference to the search button
+    const searchButton = document.getElementById('searchButton');
+    
+    // Add click event listener to the search button
+    searchButton.addEventListener('click', function() {
+        filterAndAutocomplete();
+    });
+    
+    
+    function filterItems() {
+        // Declare variables
+        var input, filter, items, i, txtValue, foundMatch;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        items = document.querySelectorAll('.Text-Item'); // Selecting elements with the class "text-item"
+        const noMatchMessage = document.getElementById("noMatchMessage");
+    
+        // Loop through all items, and hide those that don't match the search query
+        for (i = 0; i < items.length; i++) {
+            txtValue = items[i].textContent || items[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                items[i].style.display = ""; // Show item
+                foundMatch = true;
+            } else {
+                items[i].style.display = "none"; // Hide item
+            }
+        }
+    
+        // Display a message if no matches are found
+        if (!foundMatch) {
+            noMatchMessage.textContent = "No matching Content found.";
+            noMatchMessage.style.display = "block";
+        } else {
+            noMatchMessage.style.display = "none";
+        }
+    }
+    
+    
+    function autocomplete() {
+        const autocompleteInput = document.getElementById("searchInput");
+        const resultsHTML = document.getElementById("results");
+        const data = ["subscribe", 
+                    "checkout page",
+                    "product page",
+                    "cart page",
+                    "home page",
+                    "news page",
+                    "project page",
+                    "about page",
+                    "contact page",
+                    "service page",
+                    "cost page"];
+    
+        let results = [];
+        const userInput = autocompleteInput.value;
+        resultsHTML.innerHTML = "";
+    
+        if (userInput.length > 0) {
+            results = getResults(userInput);
+            resultsHTML.style.display = "block";
+            for (let i = 0; i < results.length; i++) {
+                resultsHTML.innerHTML += "<p>" + results[i] + "</p>";
+            }
+        }
+    
+        function getResults(input) {
+            const results = [];
+            for (let i = 0; i < data.length; i++) {
+                if (input === data[i].slice(0, input.length)) {
+                    results.push(data[i]);
+                }
+            }
+            return results;
+        }
+    
+        resultsHTML.onclick = function (event) {
+            const setValue = event.target.innerText;
+            autocompleteInput.value = setValue;
+            this.innerHTML = "";
+    
+            // Add logic to redirect to the corresponding page based on the search result
+            switch(setValue) {
+                case 'home page':
+                    window.location.href = 'index.html';
+                    break;
+                case 'news page':
+                    window.location.href = 'news.html';
+                    break;
+                case 'project page':
+                    window.location.href = 'project.html';
+                    break;
+                case 'about page':
+                    window.location.href = 'about.html';
+                    break;
+                case 'contact page':
+                    window.location.href = 'contact.html';
+                    break;
+                case 'cost page':
+                    window.location.href = 'cost.html';
+                    break;
+                case 'checkout page':
+                    window.location.href = 'checkout.html';
+                    break;
+                case 'product page':
+                    window.location.href = 'product.html';
+                    break;
+                case 'cart page':
+                    window.location.href = 'cart.html';
+                    break;
+                case 'service page':
+                    window.location.href = 'services.html';
+                    break;
+                // Add more cases for other search results
+                default:
+                    break;
+            }
+        };
+    }
+</script>
+<!-- ===== Search functionality ===== -->
+
+</body>
+</html>

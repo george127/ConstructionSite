@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- ====== StyleSheet ======= -->
+    <link rel="stylesheet" href="./css/contact.css">
+    
+    <!-- ====== Fonts ======= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <!-- ====== Bootstrapcdn ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+
+</head>
+<body>
+
+    <!-- ==== Header === -->
+    <header class="header">
+        <div class="container">
+            <div class="link-container">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">YOURMAIL@DOMAIN.COM</a></p>
+                <p><span class="material-symbols-outlined">location_on</span><a href="#">27TH BROOKLYN NEW YORK, NY 10065</a></p>
+                <p><span class="material-symbols-outlined">call</span><a href="#">+7(111)123456789</a></p>
+            </div>
+
+            <div class="Contact">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">our contacts</a></p>
+            </div>
+
+            <div class="link-container">
+                <div class="signIn-popUp">
+                    <div class="popUp" id="openButton"><span class="material-symbols-outlined">mail</span><p>SIGN IN</p></div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==== End Header === -->
+
+    <!-- ==== Nav === -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo-container">
+                <a href="./index.html"><img src="./img/logo.png" alt="image"></a>
+            </div>
+            <div class="links-container">
+                <ul class="items-container">
+                    <li class="items dropdown"><a href="./index.html">
+                        <p>home</p>
+                    </a></li>
+                    <li class="items"><a href="./about.html">
+                        <p>about</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./services.html">
+                        <p>services</p>
+                    </a></li>
+                    <li class="items"><a href="./news.html">
+                        <p>news</p>
+                    </a></li>
+                    <li class="items"><a href="./project.html">
+                        <p>project</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./contact.html
+                        ">
+                        <p>contact</p>
+                    </a></li>
+                    
+                </ul>
+                <div class="icons-container">
+                    <div class="icon dropdown" id="DropDow">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="Icon">menu
+                            </span>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="Dropdown-Content">
+                        <a href="./index.html">
+                            <p>home</p>
+                        </a>
+                        <a href="./about.html">
+                            <p>about</p>
+                        </a>
+                        <a href="./services.html">
+                            <p>services</p>
+                        </a>
+                        <a href="./news.html">
+                            <p>news</p>
+                        </a>
+                        <a href="./project.html">
+                            <p>project</p>
+                        </a>
+                        <a href="./contact.html">
+                            <p>contact</p>
+                        </a>
+                    </div>
+                    <div class="icon dropdown" id="dropdown1">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="icon1">local_mall
+                            </span>
+                            <div class="value" id="count">0</div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="head">
+                                <p>Your Cart</p>
+                            </div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content1">
+                        <div class="head">
+                            <p>Your Cart</p>
+                            <p><span id="Count">0</span>items</p>
+                        </div>
+
+                        <div class="cart-details">
+                            <div class="cart-items">
+                            </div>
+                        </div>  
+                
+                        <div class="total">
+                            <p>Subtotal:</p>
+                            <p><span class="cart-total-price">$0</span></p>
+                        </div>
+                        <br>
+                        <div class="link-items">
+                            <a href="./cart.html" class="btn">view cart</a>
+                            <a href="./checkout.html" class="btn">checkout</a>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown2">
+                        <div class="share-item item">
+                            <span class="material-symbols-outlined" id="icon2">share</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>share</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content2">
+                        <div class="social-media">
+                            <div class="links">
+                            <a href="#"><i class="fab fa-facebook"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-twitter"></i>
+                            </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-instagram"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-youtube"></i>
+                                </a>
+                            <a href=""><span class="material-symbols-outlined">
+                                straight
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown3">
+                        <div class="search-item item">
+                            <span class="material-symbols-outlined" id="icon3">search</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>search</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content3">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" onkeyup="filterAndAutocomplete()" class="search-input" placeholder="Search...">
+                            <ul id="results"></ul>
+                            <button class="search-button" id="searchButton"><span class="material-symbols-outlined" id="icon3">search</span></button>
+                        </div>
+                    </div>
+                </div>
+        
+                <a href="./cost.html" class="calculator-container">
+                    <p>Cost Calculator</p>
+                    <span class="material-symbols-outlined">Function</span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+    <!-- ==== End Nav === -->
+    <div class="container noMatch">
+        <div id="noMatchMessage" style="display: none;"></div>
+    </div>
+
+    <!-- ==== Banner === -->
+    <div class="section-container Text-Item">
+        <div class="section">
+            <div class="b-rgb">
+                <div class="container">
+                    <div class="text-container">
+                        <span></span>
+                        <span></span>
+                        <h2>OUR CONTACTS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium 
+                        inventore laboriosam similique reiciendis saepe id amet totam! Deserunt, odit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Text-container Text-Item">
+        <div class="container">
+            <div class="text">
+                <a href="./index.html">home</a>
+                <span>-</span>
+                <a href="./contact.html">Pages</a>
+                <span>-</span>
+                <p>contact</p>
+            </div>
+            <span class="material-symbols-outlined">
+                ungroup
+            </span>
+        </div>
+    </div>
+    <!-- ==== End Banner === -->
+
+    <!-- ==== Choose Us ==== -->
+    <div class="chooseUs-container Text-Item">
+        <img class="image" src="./img/Background.png" alt="">
+        <div class="container">
+            <div class="Button-container">
+                <div class="buttons">
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">mail</span>
+                        <div class="text">
+                            <h5>Our mails</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">YOURMAIL@DOMAIN.COM</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>01.</p></div>
+                    </div>
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">phone_in_talk</span>
+                        <div class="text">
+                            <h5>Our Phones</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">+7(111)123456789</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>02.</p></div>
+                    </div>
+                    <div class="item">
+                        <div class="line"></div>
+                        <div class="list">
+                            <span class="material-symbols-outlined">pin_drop</span>
+                        <div class="text">
+                            <h5>Our Address</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="link">USA 27TH BROOKLYN NY</a>
+                        </div>
+                        </div>
+                        <div class="num"><p>02.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== End Choose Us ==== -->
+
+    <!-- ==== contact ==== -->
+    <div class="contact-container Text-Item">
+        <br><br>
+        <div class="container">
+        <div class="head">
+            <h2>Get In touch</h2>
+            <p>We will try to answer the letter within a short time.</p>
+        </div>
+
+        <div class="Items-Container Text-Item">
+            <div class="signup-container Text-Item">
+                <div class="signup">
+                    <input type="name" id="name" name="name" required placeholder="Your name *">
+                    <input type="email" id="email" name="email" required placeholder="Your email *">
+                </div>
+                <br>
+                <textarea name="message" id="message" placeholder="your message *"></textarea>
+                <br><br>
+                <div class="btn-container">
+                    <a href="#" class="Btn">
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                        <p>Register</p></a>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+        </div>
+        <br><br>
+    </div>
+    
+    <!-- ==== End contact ==== -->
+    
+    <!-- ==== subscribe ==== -->
+    <div class="subscribe-container Text-Item">
+        <div class="container">
+            <div class="text-description">
+                <h2>subscribe</h2>
+                <p>Want to be notified about our News. Just sign up and we'll send you a notification by email.</p>
+            </div>
+            <div class="forms-container">
+                <div class="forms">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <div class="btn">send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== End subscribe ==== -->
+
+
+    <!-- ==== footer ==== -->
+    <footer class="footer-container Text-Item">
+        <div class="container">
+            <img src="./img/About-black.png" alt="">
+            <div class="footer-links">
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate aut voluptates ex ab porro debitis veniam aliquam! Ducimus reprehenderit delectus officia labore? Obcaecati consequatur, est blanditiis magni veritatis placeat.
+                    </div>
+                    <a href="#" class="btn">
+                        <p>read more</p>
+                        <span class="material-symbols-outlined">
+                            trending_flat
+                        </span>
+                        <br>
+                    </a>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="contact">
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            phone_enabled
+                        </span><p>phone : <span>+489756412322</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            mail
+                        </span><p>Email : <span>yourmail@domain.com</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            location_on
+                        </span><p>Address : <span>USA 27TH Brooklyn NY</span></p>
+                        </div>
+                    </div>
+
+                    <div class="days-container">
+                        <div class="days">
+                            <p>monday - friday:</p>
+                            <span>8am - 6pm</span>
+                        </div>
+                        <div class="days">
+                            <p>saturday - sunday:</p>
+                            <span>9am - 3pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="site-links">
+                        <ul>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Tiling and Painting</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">House Renovation</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Household Repairs</a></li>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Interiror Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="footer-links2">
+                <div class="social-media">
+                    <p>Follow us:</p>
+                    <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div> 
+                </div>
+                <div class="buttons-container">
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            shopping_cart_checkout
+                        </span>
+                        <p>Download Pricing PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            description
+                        </span>
+                        <p>company presentation PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </footer>
+    <div class="copyright Text-Item">
+        <div class="container">
+            <div class="text-items">© <span> THEROOF </span> 2023. ALL RIGHTS RESERVED.</div>
+        <div class="links-items">
+            <a href="#">Terms of use</a>
+            <a href="#">privacy policy</a>
+            <a href="#">news</a>
+            <a href="#home">
+                <span class="material-symbols-outlined" id="home">
+                expand_less
+            </span>
+            </a>
+        </div>
+        </div>
+    </div>
+    <!-- ==== End footer ==== -->
+
+    <!-- ======= Pop-up Model ======== -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-container">
+            <div class="Modal" id="modal">
+                <div class="form-container">
+                    <form id="SignupForm">
+                    <div class="btn-container">
+                        <div class="login btn active" onclick="toggle(this, 1, 'One')">
+                            <span class="material-symbols-outlined">
+                                login
+                            </span>
+                            <p>login</p>
+                        </div>
+                        <div class="register btn" onclick="toggle(this, 2, 'Two')">
+                            <span class="material-symbols-outlined">
+                                how_to_reg
+                            </span>
+                            <p>register</p>
+                        </div>
+                    </div>
+                    <div class="signup-container One" style="display: block;">
+                        <div class="signup">
+                            <label for="email">Username or Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="check-container">
+                            <div class="item">
+                                <input type="checkbox" id="rememberMe" name="rememberMe">
+                                <p>Remember me</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">Lost your password</a>
+                            </div>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">log in</button>
+                        </div>
+                        
+                    </div>
+                    <div class="signup-container Two">
+                        <div class="signup">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="name" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="signup">
+                            <label for="email">Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">Register</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="text-container">
+                        <p>Or</p>
+                        <span>For faster login or register use your social account.</span>
+                    </div>
+                    
+                    <div class="Button-container">
+                        <button class="button">
+                        <i class="fab fa-facebook"></i>
+                        Connect with Facebook
+                        </button>
+                    </div>
+                    </form>
+
+
+                    <div class="close">
+                        <span class="material-symbols-outlined" id="CloseButton">
+                            close
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ======= End Pop-up Model ======== -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/cart.js"></script>
+    
+    <script>
+        // ===== Description ======
+        var activeContainer1 = 1;
+    
+        function toggle(container1, containerNumber1, contentId1) {
+          if (containerNumber1 !== activeContainer1) {
+            var activeContainerElement1 = document.querySelector('.btn.active');
+            if (activeContainerElement1) {
+              activeContainerElement1.classList.remove('active');
+            }
+            container1.classList.add('active');
+            activeContainer1 = containerNumber1;
+          }
+        
+          const content1 = document.getElementsByClassName('signup-container');
+          for (let i = 0; i < content1.length; i++) {
+            content1[i].style.display = 'none';
+          }
+        
+          const selectedContent1 = document.getElementsByClassName(contentId1);
+          if (selectedContent1.length > 0) {
+            selectedContent1[0].style.display = 'block';
+        
+          }
+        }
+    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg5Iqs12530OcDOU-n2XkL_xw8w2DcEuk&callback=initMap"
+async defer></script>
+
+<script>
+    var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 5.576740, lng: -0.309537}, // Coordinates for New York City
+    zoom: 12,
+    styles: [
+      {
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#bdbdbd"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#eeeeee"
+          }
+        ]
+      },
+      // Add more custom styles as needed
+    ]
+  });
+}
+</script>
+
+<!-- ===== Search functionality ===== -->
+<script>
+    function filterAndAutocomplete() {
+        filterItems();
+        autocomplete();
+    }
+    
+    // Get reference to the search button
+    const searchButton = document.getElementById('searchButton');
+    
+    // Add click event listener to the search button
+    searchButton.addEventListener('click', function() {
+        filterAndAutocomplete();
+    });
+    
+    
+    function filterItems() {
+        // Declare variables
+        var input, filter, items, i, txtValue, foundMatch;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        items = document.querySelectorAll('.Text-Item'); // Selecting elements with the class "text-item"
+        const noMatchMessage = document.getElementById("noMatchMessage");
+    
+        // Loop through all items, and hide those that don't match the search query
+        for (i = 0; i < items.length; i++) {
+            txtValue = items[i].textContent || items[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                items[i].style.display = ""; // Show item
+                foundMatch = true;
+            } else {
+                items[i].style.display = "none"; // Hide item
+            }
+        }
+    
+        // Display a message if no matches are found
+        if (!foundMatch) {
+            noMatchMessage.textContent = "No matching Content found.";
+            noMatchMessage.style.display = "block";
+        } else {
+            noMatchMessage.style.display = "none";
+        }
+    }
+    
+    
+    function autocomplete() {
+        const autocompleteInput = document.getElementById("searchInput");
+        const resultsHTML = document.getElementById("results");
+        const data = ["subscribe", 
+                    "checkout page",
+                    "product page",
+                    "cart page",
+                    "home page",
+                    "news page",
+                    "project page",
+                    "about page",
+                    "contact page",
+                    "service page",
+                    "cost page"];
+    
+        let results = [];
+        const userInput = autocompleteInput.value;
+        resultsHTML.innerHTML = "";
+    
+        if (userInput.length > 0) {
+            results = getResults(userInput);
+            resultsHTML.style.display = "block";
+            for (let i = 0; i < results.length; i++) {
+                resultsHTML.innerHTML += "<p>" + results[i] + "</p>";
+            }
+        }
+    
+        function getResults(input) {
+            const results = [];
+            for (let i = 0; i < data.length; i++) {
+                if (input === data[i].slice(0, input.length)) {
+                    results.push(data[i]);
+                }
+            }
+            return results;
+        }
+    
+        resultsHTML.onclick = function (event) {
+            const setValue = event.target.innerText;
+            autocompleteInput.value = setValue;
+            this.innerHTML = "";
+    
+            // Add logic to redirect to the corresponding page based on the search result
+            switch(setValue) {
+                case 'home page':
+                    window.location.href = 'index.html';
+                    break;
+                case 'news page':
+                    window.location.href = 'news.html';
+                    break;
+                case 'project page':
+                    window.location.href = 'project.html';
+                    break;
+                case 'about page':
+                    window.location.href = 'about.html';
+                    break;
+                case 'contact page':
+                    window.location.href = 'contact.html';
+                    break;
+                case 'cost page':
+                    window.location.href = 'cost.html';
+                    break;
+                case 'checkout page':
+                    window.location.href = 'checkout.html';
+                    break;
+                case 'product page':
+                    window.location.href = 'product.html';
+                    break;
+                case 'cart page':
+                    window.location.href = 'cart.html';
+                    break;
+                case 'service page':
+                    window.location.href = 'services.html';
+                    break;
+                // Add more cases for other search results
+                default:
+                    break;
+            }
+        };
+    }
+</script>
+<!-- ===== Search functionality ===== -->
+</body>
+</html>
