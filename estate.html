@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate</title>
+
+    <!-- ====== StyleSheet ======= -->
+    <link rel="stylesheet" href="./css/estate.css">
+    
+    <!-- ====== Fonts ======= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <!-- ====== Bootstrapcdn ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+
+
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript (optional if you don't need JavaScript features like modal animation) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!-- ==== Header === -->
+    <header class="header">
+        <div class="container">
+            <div class="link-container">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">YOURMAIL@DOMAIN.COM</a></p>
+                <p><span class="material-symbols-outlined">location_on</span><a href="#">27TH BROOKLYN NEW YORK, NY 10065</a></p>
+                <p><span class="material-symbols-outlined">call</span><a href="#">+7(111)123456789</a></p>
+            </div>
+
+            <div class="Contact">
+                <p><span class="material-symbols-outlined">mail</span><a href="#">our contacts</a></p>
+            </div>
+
+            <div class="link-container">
+                <div class="signIn-popUp">
+                    <div class="popUp" id="openButton"><span class="material-symbols-outlined">mail</span><p>SIGN IN</p></div>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-twitter"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-instagram"></i>
+                        </a>
+                    <a href="#"><i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==== End Header === -->
+
+     <!-- ==== Nav === -->
+     <nav class="nav">
+        <div class="container">
+            <div class="logo-container">
+                <a href="./index.html"><img src="./img/logo.png" alt="image"></a>
+            </div>
+            <div class="links-container">
+                <ul class="items-container">
+                    <li class="items dropdown"><a href="./index.html">
+                        <p>home</p>
+                    </a></li>
+                    <li class="items"><a href="./about.html">
+                        <p>about</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./services.html">
+                        <p>services</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./estate.html">
+                        <p>estate</p>
+                    </a></li>
+                    <li class="items"><a href="./news.html">
+                        <p>news</p>
+                    </a></li>
+                    <li class="items"><a href="./project.html">
+                        <p>project</p>
+                    </a></li>
+                    <li class="items dropdown"><a href="./contact.html">
+                        <p>contact</p>
+                    </a></li>
+                    
+                </ul>
+                <div class="icons-container">
+                    <div class="icon dropdown" id="DropDow">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="Icon">menu
+                            </span>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="Dropdown-Content">
+                        <a href="./index.html">
+                            <p>home</p>
+                        </a>
+                        <a href="./about.html">
+                            <p>about</p>
+                        </a>
+                        <a href="./services.html">
+                            <p>services</p>
+                        </a>
+                        <a href="./estate.html">
+                            <p>estate</p>
+                        </a>
+                        <a href="./news.html">
+                            <p>news</p>
+                        </a>
+                        <a href="./project.html">
+                            <p>project</p>
+                        </a>
+                        <a href="./contact.html">
+                            <p>contact</p>
+                        </a>
+                    </div>
+                    <div class="icon dropdown" id="dropdown1">
+                        <div class="item">
+                            <span class="material-symbols-outlined" id="icon1">local_mall
+                            </span>
+                            <div class="value" id="count">0</div>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="head">
+                                <p>Your Cart</p>
+                            </div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content1">
+                        <div class="head">
+                            <p>Your Cart</p>
+                            <p><span id="Count">0</span>items</p>
+                        </div>
+
+                        <div class="cart-details">
+                            <div class="cart-items">
+                            </div>
+                        </div>  
+                
+                        <div class="total">
+                            <p>Subtotal:</p>
+                            <p><span class="cart-total-price">$0</span></p>
+                        </div>
+                        <br>
+                        <div class="link-items">
+                            <a href="./cart.html" class="btn">view cart</a>
+                            <a href="./checkout.html" class="btn">checkout</a>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown2">
+                        <div class="share-item item">
+                            <span class="material-symbols-outlined" id="icon2">share</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>share</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content2">
+                        <div class="social-media">
+                            <div class="links">
+                            <a href="#"><i class="fab fa-facebook"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-twitter"></i>
+                            </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-instagram"></i>
+                                </a>
+                            <a href="#"><i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                            <div class="links">
+                            <a href="#"><i class="fab fa-youtube"></i>
+                                </a>
+                            <a href=""><span class="material-symbols-outlined">
+                                straight
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon dropdown" id="dropdown3">
+                        <div class="search-item item">
+                            <span class="material-symbols-outlined" id="icon3">search</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p>search</p>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div id="dropdown-content3">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" onkeyup="filterAndAutocomplete()" class="searchInput" placeholder="Search...">
+                            <ul id="results"></ul>
+                            <button class="search-button" id="searchButton"><span class="material-symbols-outlined" id="icon3">search</span></button>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <a href="./cost.html" class="calculator-container">
+                    <p>Cost Calculator</p>
+                    <span class="material-symbols-outlined">Function</span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+    <!-- ==== End Nav === -->
+    
+    <div class="container noMatch">
+        <div id="noMatchMessage" style="display: none;"></div>
+    </div>
+
+    <!-- ==== Banner === -->
+    <div class="section-container Text-Item">
+        <div class="section">
+            <div class="b-rgb">
+                <div class="container">
+                    <div class="text-container">
+                        <span></span>
+                        <span></span>
+                        <h2>OUR REAL ESTATE</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium 
+                        inventore laboriosam similique reiciendis saepe id amet totam! Deserunt, odit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Text-container Text-Item">
+        <div class="container">
+            <div class="text">
+                <a href="./index.html">home</a>
+                <span>-</span>
+                <p>Our REAL ESTATE</p>
+            </div>
+            <span class="material-symbols-outlined">
+                ungroup
+            </span>
+        </div>
+    </div>
+    <!-- ==== End Banner === -->
+
+    <!-- ==== Services === -->
+    <div class="services-container Text-Item">
+        <br><br><br><br>
+        <div class="container">
+            <div class="productCard">
+                <div class="no-match-message" style="display: none;">
+                    Sorry, but nothing matched your search criteria
+                </div>
+                <div class="card-container">
+                    <!-- Property One -->
+                    <div class="cardItems" data-status="For Rent" data-location="Greater Accra" data-type="House" data-style="Pre-War" data-rooms="4" data-bedrooms="4" data-bathrooms="4" data-parking="2" data-area="2500" data-price="160000" data-amenities="Attended Lobby, Concierge" data-options="New Listings Only">
+                        <div class="image-container" style="background: url('./img/estate/img2.jpg') no-repeat center center / cover">
+                            <div class="image">
+                                <p class="btn" data-toggle="modal" data-target="#fullscreenModal1">Details</p>
+                            </div>
+                            <span class="line">
+                                <p>$2,189,000</p>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-title">
+                                    <p>HOUSE FOR SALE</p>
+                                    <a href="#" data-toggle="modal" data-target="#fullscreenModal">
+                                        <span class="material-symbols-outlined">
+                                            home_pin
+                                        </span>
+                                        87 Mishaum Point Rd
+                                    </a>
+                                </div>
+                                <p class="card-text">Dartmouth, MA 02748</p>
+                                <div class="item-list">                            
+                                    <div class="date">
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                apartment
+                                                </span>
+                                            <p>1,286 sqft</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bed
+                                                </span>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bathtub
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                warehouse
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="modal fade" id="fullscreenModal1" tabindex="-1" role="dialog" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="material-symbols-outlined">cancel</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="property-container">
+                                            <div class="property">
+                                                <div class="image-container" style="background: url('./img/estate/img2.jpg') no-repeat center center / cover">
+                                                    <span class="Line">
+                                                        <p>sale</p>
+                                                    </span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-item">
+                                                        <div class="card-title">
+                                                            <p class="title">IN <span>FOR SALE, LUX PROPERTY</span>  /  STARTED <span>FEBRUARY 5, 2016</span>  /  <span>0 COMMENTS</span></p>
+                                                            <br>
+                                                            <p class="items-title">
+                                                                87 Mishaum Point Rd, Dartmouth, MA 02748
+                                                            </p>
+                                                            <span>Property ID: 20055, House.</span>
+                                                        </div>
+                                                        <div class="item-list">                            
+                                                            <div class="date">
+                                                                <div class="price">
+                                                                    $1,249,000
+                                                                </div>
+                                                                <div class="items">
+                                                                    <span class="material-symbols-outlined">
+                                                                        apartment
+                                                                        </span>
+                                                                    <p>1,286 sqft</p>
+                                                                </div>
+                                                                <div class="items">
+                                                                    <span class="material-symbols-outlined">
+                                                                        bed
+                                                                        </span>
+                                                                    <p>2</p>
+                                                                </div>
+                                                                <div class="items">
+                                                                    <span class="material-symbols-outlined">
+                                                                        bathtub
+                                                                        </span>
+                                                                    <p>4</p>
+                                                                </div>
+                                                                <div class="items">
+                                                                    <span class="material-symbols-outlined">
+                                                                        warehouse
+                                                                        </span>
+                                                                    <p>4</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="item-list">
+                                                            <p>The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
+                                                            <p>mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="card-item">
+                                                        <h2>FEATURES & AMENITIES</h2>
+                                                        <br>
+                                                        <div class="features">
+                                                            <div class="item">
+                                                                <ul>
+                                                                    <li>Quiet Neighbourhood</li>
+                                                                    <li>Great Local Community</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li>Fabulous Views</li>
+                                                                    <li>Large Play Center In Yard</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="card-item">
+                                                        <h2>ADDITIONAL DETAILS</h2>
+                                                        <br>
+                                                        <div class="details">
+                                                            <p>AC: Ceiling Fan(s), Central</p>
+                                                            <p>ACRES: 0.16</p>
+                                                            <p>ACRES SOURCE: Assessor</p>
+                                                            <p>AP #: 374-493-13</p>
+                                                            <p>APPLIANCES: Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</p>
+                                                            <p>BATHROOM DESCRIPTION: Stall Shower</p>
+                                                            <p>BEDROOM FEATURES: Main Floor Master Bedroom</p>
+                                                            <p>CROSS STREETS: Lincoln and Anchor</p>
+                                                            <p>DINING AREA: Family Kitchen</p>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="card-item">
+                                                        <h2>NEARBY PUBLIC PLACES AND TRANSPORTION</h2>
+                                                        <br>
+                                                        <div class="details">
+                                                        <p>Subway (line 1E): 0.12 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 18th St (18th St and 7th Ave)</p>
+                                                        <p>Market: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                        <p>Kindergarden: 0.26 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 23rd St (23rd St and 8th Ave)</p>
+                                                        <p>School: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="card-item">
+                                                        <h2>CONTACTS US</h2>
+                                                        <br>
+                                                        <div class="profile-container">
+                                                            <div class="profile">
+                                                                <div class="item-container">
+                                                                    <img src="./img/Team3.jpg" alt="">
+                                                                    <div class="details">
+                                                                        <h3 class="name">Calab Williams</h3>
+                                                                        <p class="profession">Agent</p>
+                                                                        <div class="icons">
+                                                                            <a href="#"><i class="fab fa-facebook"></i>
+                                                                            </a>
+                                                                            <a href="#"><i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                            <a href="#"><i class="fab fa-instagram"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contact">
+                                                                    <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                    <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile">
+                                                                <div class="item-container">
+                                                                    <img src="./img/Team2.jpg" alt="">
+                                                                    <div class="details">
+                                                                        <h3 class="name">Sebastian Jones</h3>
+                                                                        <p class="profession">Sales Maneger</p>
+                                                                        <div class="icons">
+                                                                            <a href="#"><i class="fab fa-facebook"></i>
+                                                                            </a>
+                                                                            <a href="#"><i class="fab fa-twitter"></i>
+                                                                            </a>
+                                                                            <a href="#"><i class="fab fa-instagram"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contact">
+                                                                    <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                    <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="card-item">
+                                                        <h2>PROPERTY MAP</h2>
+                                                        <br>
+                                                        <div class="map">
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Property Two -->
+                    <div class="cardItems" data-status="For Sale" data-location="Eastern" data-type="Condominium" data-style="Loft" data-rooms="3" data-bedrooms="3" data-bathrooms="3" data-parking="2" data-area="1500" data-price="320000" data-amenities="Gym, Parking" data-options="Open Houses">
+                        <div class="image-container" style="background: url('./img/estate/img3.jpg') no-repeat center center / cover">
+                            <div class="image">
+                                <p class="btn" data-toggle="modal" data-target="#fullscreenModal2">Details</p>
+                            </div>
+                            <span class="line">
+                                <p>$2,189,000</p>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-title">
+                                    <p>TOWNHOUSE FOR SALE</p>
+                                    <a href="././project.html">
+                                        <span class="material-symbols-outlined">
+                                            home_pin
+                                        </span>
+                                        87 Mishaum Point Rd
+                                    </a>
+                                </div>
+                                <p class="card-text">Dartmouth, MA 02748</p>
+                                <div class="item-list">                            
+                                    <div class="date">
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                apartment
+                                                </span>
+                                            <p>1,286 sqft</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bed
+                                                </span>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bathtub
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                warehouse
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="fullscreenModal2" tabindex="-1" role="dialog" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="material-symbols-outlined">cancel</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="property-container">
+                                        <div class="property">
+                                            <div class="image-container" style="background: url('./img/estate/img3.jpg') no-repeat center center / cover">
+                                                <span class="Line">
+                                                    <p>sale</p>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-item">
+                                                    <div class="card-title">
+                                                        <p class="title">IN <span>FOR SALE, LUX PROPERTY</span>  /  STARTED <span>FEBRUARY 5, 2016</span>  /  <span>0 COMMENTS</span></p>
+                                                        <br>
+                                                        <p class="items-title">
+                                                            87 Mishaum Point Rd, Dartmouth, MA 02748
+                                                        </p>
+                                                        <span>Property ID: 20055, House.</span>
+                                                    </div>
+                                                    <div class="item-list">                            
+                                                        <div class="date">
+                                                            <div class="price">
+                                                                $1,249,000
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    apartment
+                                                                    </span>
+                                                                <p>1,286 sqft</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bed
+                                                                    </span>
+                                                                <p>2</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bathtub
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    warehouse
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="item-list">
+                                                        <p>The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
+                                                        <p>mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>FEATURES & AMENITIES</h2>
+                                                    <br>
+                                                    <div class="features">
+                                                        <div class="item">
+                                                            <ul>
+                                                                <li>Quiet Neighbourhood</li>
+                                                                <li>Great Local Community</li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>Fabulous Views</li>
+                                                                <li>Large Play Center In Yard</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>ADDITIONAL DETAILS</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                        <p>AC: Ceiling Fan(s), Central</p>
+                                                        <p>ACRES: 0.16</p>
+                                                        <p>ACRES SOURCE: Assessor</p>
+                                                        <p>AP #: 374-493-13</p>
+                                                        <p>APPLIANCES: Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</p>
+                                                        <p>BATHROOM DESCRIPTION: Stall Shower</p>
+                                                        <p>BEDROOM FEATURES: Main Floor Master Bedroom</p>
+                                                        <p>CROSS STREETS: Lincoln and Anchor</p>
+                                                        <p>DINING AREA: Family Kitchen</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>NEARBY PUBLIC PLACES AND TRANSPORTION</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                    <p>Subway (line 1E): 0.12 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 18th St (18th St and 7th Ave)</p>
+                                                    <p>Market: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    <p>Kindergarden: 0.26 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 23rd St (23rd St and 8th Ave)</p>
+                                                    <p>School: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>CONTACTS US</h2>
+                                                    <br>
+                                                    <div class="profile-container">
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team3.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Calab Williams</h3>
+                                                                    <p class="profession">Agent</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team2.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Sebastian Jones</h3>
+                                                                    <p class="profession">Sales Maneger</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>PROPERTY MAP</h2>
+                                                    <br>
+                                                    <div class="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Three -->
+                    <div class="cardItems" data-status="For Rent" data-location="Northern Region" data-type="New Development" data-style="PentHouse" data-rooms="5" data-bedrooms="5" data-bathrooms="4" data-parking="3" data-area="40000" data-price="420000" data-amenities="Pool, Washer / Drye" data-options="Sponsor Units">
+                        <div class="image-container" style="background: url('./img/estate/img4.jpg') no-repeat center center / cover">
+                            <div class="image">
+                                <p class="btn" data-toggle="modal" data-target="#fullscreenModal3">Details</p>
+                            </div>
+                            <span class="line">
+                                <p>$2,189,000</p>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-title">
+                                    <p>HOUSE FOR RENT</p>
+                                    <a href="././project.html">
+                                        <span class="material-symbols-outlined">
+                                            home_pin
+                                        </span>
+                                        87 Mishaum Point Rd
+                                    </a>
+                                </div>
+                                <p class="card-text">Dartmouth, MA 02748</p>
+                                <div class="item-list">                            
+                                    <div class="date">
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                apartment
+                                                </span>
+                                            <p>1,286 sqft</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bed
+                                                </span>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bathtub
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                warehouse
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="fullscreenModal3" tabindex="-1" role="dialog" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="material-symbols-outlined">cancel</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="property-container">
+                                        <div class="property">
+                                            <div class="image-container" style="background: url('./img/estate/img4.jpg') no-repeat center center / cover">
+                                                <span class="Line">
+                                                    <p>sale</p>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-item">
+                                                    <div class="card-title">
+                                                        <p class="title">IN <span>FOR SALE, LUX PROPERTY</span>  /  STARTED <span>FEBRUARY 5, 2016</span>  /  <span>0 COMMENTS</span></p>
+                                                        <br>
+                                                        <p class="items-title">
+                                                            87 Mishaum Point Rd, Dartmouth, MA 02748
+                                                        </p>
+                                                        <span>Property ID: 20055, House.</span>
+                                                    </div>
+                                                    <div class="item-list">                            
+                                                        <div class="date">
+                                                            <div class="price">
+                                                                $1,249,000
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    apartment
+                                                                    </span>
+                                                                <p>1,286 sqft</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bed
+                                                                    </span>
+                                                                <p>2</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bathtub
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    warehouse
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="item-list">
+                                                        <p>The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
+                                                        <p>mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>FEATURES & AMENITIES</h2>
+                                                    <br>
+                                                    <div class="features">
+                                                        <div class="item">
+                                                            <ul>
+                                                                <li>Quiet Neighbourhood</li>
+                                                                <li>Great Local Community</li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>Fabulous Views</li>
+                                                                <li>Large Play Center In Yard</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>ADDITIONAL DETAILS</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                        <p>AC: Ceiling Fan(s), Central</p>
+                                                        <p>ACRES: 0.16</p>
+                                                        <p>ACRES SOURCE: Assessor</p>
+                                                        <p>AP #: 374-493-13</p>
+                                                        <p>APPLIANCES: Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</p>
+                                                        <p>BATHROOM DESCRIPTION: Stall Shower</p>
+                                                        <p>BEDROOM FEATURES: Main Floor Master Bedroom</p>
+                                                        <p>CROSS STREETS: Lincoln and Anchor</p>
+                                                        <p>DINING AREA: Family Kitchen</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>NEARBY PUBLIC PLACES AND TRANSPORTION</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                    <p>Subway (line 1E): 0.12 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 18th St (18th St and 7th Ave)</p>
+                                                    <p>Market: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    <p>Kindergarden: 0.26 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 23rd St (23rd St and 8th Ave)</p>
+                                                    <p>School: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>CONTACTS US</h2>
+                                                    <br>
+                                                    <div class="profile-container">
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team3.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Calab Williams</h3>
+                                                                    <p class="profession">Agent</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team2.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Sebastian Jones</h3>
+                                                                    <p class="profession">Sales Maneger</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>PROPERTY MAP</h2>
+                                                    <br>
+                                                    <div class="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Four -->
+                    <div class="cardItems" data-status="For Sale" data-location="Central Region" data-type="Investment" data-style="TownHouse Apartment" data-rooms="5" data-bedrooms="5" data-bathrooms="5" data-parking="4" data-area="20000" data-price="520000" data-amenities="Gym, Parking, Fireplace" data-options="New Listings Only">
+                        <div class="image-container" style="background: url('./img/estate/img5.jpg') no-repeat center center / cover">
+                            <div class="image">
+                                <p class="btn" data-toggle="modal" data-target="#fullscreenModal4">Details</p>
+                            </div>
+                            <span class="line">
+                                <p>$2,189,000</p>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-title">
+                                    <p>HOUSE FOR SALE</p>
+                                    <a href="././project.html">
+                                        <span class="material-symbols-outlined">
+                                            home_pin
+                                        </span>
+                                        87 Mishaum Point Rd
+                                    </a>
+                                </div>
+                                <p class="card-text">Dartmouth, MA 02748</p>
+                                <div class="item-list">                            
+                                    <div class="date">
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                apartment
+                                                </span>
+                                            <p>1,286 sqft</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bed
+                                                </span>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bathtub
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                warehouse
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="fullscreenModal4" tabindex="-1" role="dialog" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="material-symbols-outlined">cancel</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="property-container">
+                                        <div class="property">
+                                            <div class="image-container" style="background: url('./img/estate/img5.jpg') no-repeat center center / cover">
+                                                <span class="Line">
+                                                    <p>sale</p>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-item">
+                                                    <div class="card-title">
+                                                        <p class="title">IN <span>FOR SALE, LUX PROPERTY</span>  /  STARTED <span>FEBRUARY 5, 2016</span>  /  <span>0 COMMENTS</span></p>
+                                                        <br>
+                                                        <p class="items-title">
+                                                            87 Mishaum Point Rd, Dartmouth, MA 02748
+                                                        </p>
+                                                        <span>Property ID: 20055, House.</span>
+                                                    </div>
+                                                    <div class="item-list">                            
+                                                        <div class="date">
+                                                            <div class="price">
+                                                                $1,249,000
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    apartment
+                                                                    </span>
+                                                                <p>1,286 sqft</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bed
+                                                                    </span>
+                                                                <p>2</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bathtub
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    warehouse
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="item-list">
+                                                        <p>The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
+                                                        <p>mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>FEATURES & AMENITIES</h2>
+                                                    <br>
+                                                    <div class="features">
+                                                        <div class="item">
+                                                            <ul>
+                                                                <li>Quiet Neighbourhood</li>
+                                                                <li>Great Local Community</li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>Fabulous Views</li>
+                                                                <li>Large Play Center In Yard</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>ADDITIONAL DETAILS</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                        <p>AC: Ceiling Fan(s), Central</p>
+                                                        <p>ACRES: 0.16</p>
+                                                        <p>ACRES SOURCE: Assessor</p>
+                                                        <p>AP #: 374-493-13</p>
+                                                        <p>APPLIANCES: Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</p>
+                                                        <p>BATHROOM DESCRIPTION: Stall Shower</p>
+                                                        <p>BEDROOM FEATURES: Main Floor Master Bedroom</p>
+                                                        <p>CROSS STREETS: Lincoln and Anchor</p>
+                                                        <p>DINING AREA: Family Kitchen</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>NEARBY PUBLIC PLACES AND TRANSPORTION</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                    <p>Subway (line 1E): 0.12 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 18th St (18th St and 7th Ave)</p>
+                                                    <p>Market: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    <p>Kindergarden: 0.26 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 23rd St (23rd St and 8th Ave)</p>
+                                                    <p>School: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>CONTACTS US</h2>
+                                                    <br>
+                                                    <div class="profile-container">
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team3.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Calab Williams</h3>
+                                                                    <p class="profession">Agent</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team2.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Sebastian Jones</h3>
+                                                                    <p class="profession">Sales Maneger</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>PROPERTY MAP</h2>
+                                                    <br>
+                                                    <div class="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Five -->
+                    <div class="cardItems" data-status="For Rent" data-location="Northern Region" data-type="Condominium" data-style="PentHouse" data-rooms="2" data-bedrooms="2" data-bathrooms="1" data-parking="1" data-area="5200" data-price="260000" data-amenities="Outdoor Space" data-options="Open Houses">
+                        <div class="image-container" style="background: url('./img/estate/img6.jpg') no-repeat center center / cover">
+                            <div class="image">
+                                <p class="btn" data-toggle="modal" data-target="#fullscreenModal5">Details</p>
+                            </div>
+                            <span class="line">
+                                <p>$2,189,000</p>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-title">
+                                    <p>COMMERCIAL FOR RENT</p>
+                                    <a href="././project.html">
+                                        <span class="material-symbols-outlined">
+                                            home_pin
+                                        </span>
+                                        87 Mishaum Point Rd
+                                    </a>
+                                </div>
+                                <p class="card-text">Dartmouth, MA 02748</p>
+                                <div class="item-list">                            
+                                    <div class="date">
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                apartment
+                                                </span>
+                                            <p>1,286 sqft</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bed
+                                                </span>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bathtub
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                warehouse
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="fullscreenModal5" tabindex="-1" role="dialog" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="material-symbols-outlined">cancel</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="property-container">
+                                        <div class="property">
+                                            <div class="image-container" style="background: url('./img/estate/img6.jpg') no-repeat center center / cover">
+                                                <span class="Line">
+                                                    <p>sale</p>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-item">
+                                                    <div class="card-title">
+                                                        <p class="title">IN <span>FOR SALE, LUX PROPERTY</span>  /  STARTED <span>FEBRUARY 5, 2016</span>  /  <span>0 COMMENTS</span></p>
+                                                        <br>
+                                                        <p class="items-title">
+                                                            87 Mishaum Point Rd, Dartmouth, MA 02748
+                                                        </p>
+                                                        <span>Property ID: 20055, House.</span>
+                                                    </div>
+                                                    <div class="item-list">                            
+                                                        <div class="date">
+                                                            <div class="price">
+                                                                $1,249,000
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    apartment
+                                                                    </span>
+                                                                <p>1,286 sqft</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bed
+                                                                    </span>
+                                                                <p>2</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bathtub
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    warehouse
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="item-list">
+                                                        <p>The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
+                                                        <p>mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>FEATURES & AMENITIES</h2>
+                                                    <br>
+                                                    <div class="features">
+                                                        <div class="item">
+                                                            <ul>
+                                                                <li>Quiet Neighbourhood</li>
+                                                                <li>Great Local Community</li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>Fabulous Views</li>
+                                                                <li>Large Play Center In Yard</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>ADDITIONAL DETAILS</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                        <p>AC: Ceiling Fan(s), Central</p>
+                                                        <p>ACRES: 0.16</p>
+                                                        <p>ACRES SOURCE: Assessor</p>
+                                                        <p>AP #: 374-493-13</p>
+                                                        <p>APPLIANCES: Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</p>
+                                                        <p>BATHROOM DESCRIPTION: Stall Shower</p>
+                                                        <p>BEDROOM FEATURES: Main Floor Master Bedroom</p>
+                                                        <p>CROSS STREETS: Lincoln and Anchor</p>
+                                                        <p>DINING AREA: Family Kitchen</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>NEARBY PUBLIC PLACES AND TRANSPORTION</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                    <p>Subway (line 1E): 0.12 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 18th St (18th St and 7th Ave)</p>
+                                                    <p>Market: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    <p>Kindergarden: 0.26 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 23rd St (23rd St and 8th Ave)</p>
+                                                    <p>School: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>CONTACTS US</h2>
+                                                    <br>
+                                                    <div class="profile-container">
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team3.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Calab Williams</h3>
+                                                                    <p class="profession">Agent</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team2.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Sebastian Jones</h3>
+                                                                    <p class="profession">Sales Maneger</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>PROPERTY MAP</h2>
+                                                    <br>
+                                                    <div class="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Six -->
+                    <div class="cardItems" data-status="For Sale" data-location="Volta Region" data-type="Cormmercial" data-style="Loft" data-rooms="3" data-bedrooms="1" data-bathrooms="1" data-parking="1" data-area="1500" data-price="100000" data-amenities="Gym, Parking" data-options="Open Houses">
+                        <div class="image-container" style="background: url('./img/estate/img7.jpg') no-repeat center center / cover">
+                            <div class="image">
+                                <p class="btn" data-toggle="modal" data-target="#fullscreenModal6">Details</p>
+                            </div>
+                            <span class="line">
+                                <p>$2,189,000</p>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-title">
+                                    <p>COND-OP FOR SALE</p>
+                                    <a href="././project.html">
+                                        <span class="material-symbols-outlined">
+                                            home_pin
+                                        </span>
+                                        87 Mishaum Point Rd
+                                    </a>
+                                </div>
+                                <p class="card-text">Dartmouth, MA 02748</p>
+                                <div class="item-list">                            
+                                    <div class="date">
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                apartment
+                                                </span>
+                                            <p>1,286 sqft</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bed
+                                                </span>
+                                            <p>2</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                bathtub
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                        <div class="items">
+                                            <span class="material-symbols-outlined">
+                                                warehouse
+                                                </span>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="fullscreenModal6" tabindex="-1" role="dialog" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-fullscreen-xxl-down" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="material-symbols-outlined">cancel</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="property-container">
+                                        <div class="property">
+                                            <div class="image-container" style="background: url('./img/estate/img7.jpg') no-repeat center center / cover">
+                                                <span class="Line">
+                                                    <p>sale</p>
+                                                </span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-item">
+                                                    <div class="card-title">
+                                                        <p class="title">IN <span>FOR SALE, LUX PROPERTY</span>  /  STARTED <span>FEBRUARY 5, 2016</span>  /  <span>0 COMMENTS</span></p>
+                                                        <br>
+                                                        <p class="items-title">
+                                                            87 Mishaum Point Rd, Dartmouth, MA 02748
+                                                        </p>
+                                                        <span>Property ID: 20055, House.</span>
+                                                    </div>
+                                                    <div class="item-list">                            
+                                                        <div class="date">
+                                                            <div class="price">
+                                                                $1,249,000
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    apartment
+                                                                    </span>
+                                                                <p>1,286 sqft</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bed
+                                                                    </span>
+                                                                <p>2</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    bathtub
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <span class="material-symbols-outlined">
+                                                                    warehouse
+                                                                    </span>
+                                                                <p>4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="item-list">
+                                                        <p>The Moana Residence is situated on the best lot at Kohanaiki and is a 5 bedroom, 5 1/2 bath home of approximately 8,000 interior sq. ft. It features Ipe hardwood flooring on the interior and granite stone flooring on the lanais, granite countertops, vaulted cedar ceilings, clerestory windows for lots of light.</p>
+                                                        <p>mahogany cabinetry, mahogany trim and pocketing doors throughout. The beautifully landscaped grounds include a large lap pool, spa and separate Pool.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>FEATURES & AMENITIES</h2>
+                                                    <br>
+                                                    <div class="features">
+                                                        <div class="item">
+                                                            <ul>
+                                                                <li>Quiet Neighbourhood</li>
+                                                                <li>Great Local Community</li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>Fabulous Views</li>
+                                                                <li>Large Play Center In Yard</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>ADDITIONAL DETAILS</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                        <p>AC: Ceiling Fan(s), Central</p>
+                                                        <p>ACRES: 0.16</p>
+                                                        <p>ACRES SOURCE: Assessor</p>
+                                                        <p>AP #: 374-493-13</p>
+                                                        <p>APPLIANCES: Dishwasher, Freestanding Gas Range, Garbage Disposal, Microwave</p>
+                                                        <p>BATHROOM DESCRIPTION: Stall Shower</p>
+                                                        <p>BEDROOM FEATURES: Main Floor Master Bedroom</p>
+                                                        <p>CROSS STREETS: Lincoln and Anchor</p>
+                                                        <p>DINING AREA: Family Kitchen</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>NEARBY PUBLIC PLACES AND TRANSPORTION</h2>
+                                                    <br>
+                                                    <div class="details">
+                                                    <p>Subway (line 1E): 0.12 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 18th St (18th St and 7th Ave)</p>
+                                                    <p>Market: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    <p>Kindergarden: 0.26 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 23rd St (23rd St and 8th Ave)</p>
+                                                    <p>School: 0.15 mi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 14th St (16th St and 8th Ave)</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>CONTACTS US</h2>
+                                                    <br>
+                                                    <div class="profile-container">
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team3.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Calab Williams</h3>
+                                                                    <p class="profession">Agent</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="profile">
+                                                            <div class="item-container">
+                                                                <img src="./img/Team2.jpg" alt="">
+                                                                <div class="details">
+                                                                    <h3 class="name">Sebastian Jones</h3>
+                                                                    <p class="profession">Sales Maneger</p>
+                                                                    <div class="icons">
+                                                                        <a href="#"><i class="fab fa-facebook"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-twitter"></i>
+                                                                        </a>
+                                                                        <a href="#"><i class="fab fa-instagram"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact">
+                                                                <p><span class="material-symbols-outlined">phone_iphone</span>800 123 45 67</p>
+                                                                <p><span class="material-symbols-outlined">mail</span>email@company.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="card-item">
+                                                    <h2>PROPERTY MAP</h2>
+                                                    <br>
+                                                    <div class="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="side-bar">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Property Status</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">For Rent</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">For Sale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Property Location</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Greater Accra</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Eastern</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Northern Region</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Ahafo</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Central Region</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Volta Region</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Upper West</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Ashanti Region</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Upper East</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Property Type</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Cooperative</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Condominium</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Condo-op</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">House</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Investment</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Cormmercial</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Professional / Medical</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">New Development</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">TownHouse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Property Style</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Pre-War</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Post-war</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Loft</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">TownHouse Apartment</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">PentHouse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Total Rooms</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Room At Least 1</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Room At Least 2</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Room At Least 3</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Room At Least 4</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Room 5 or More</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Bedrooms</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Bedroom At Least 1</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bedroom At Least 2</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bedroom At Least 3</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bedroom At Least 4</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bedroom 5 or More</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Bathrooms </span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Bathrooms At Least 1</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bathrooms At Least 2</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bathrooms At Least 3</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bathrooms At Least 4</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Bathrooms 5 or More</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Car Parking</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <span class="option-text">Car Parking At Least 1</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Car Parking At Least 2</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Car Parking At Least 3</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Car Parking At Least 4</span>
+                            </div>
+                            <div class="option">
+                                <span class="option-text">Car Parking 5 or More</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="slider">
+                    
+                    <div class="number-slider">
+                        <div class="value">
+                            <p class="range">Area</p>
+                        <span>Sqft <div class="Num"></div></span>
+                        </div>
+                        <input value="0" step="1" type="number" class="range-slider area-slider">
+                    </div>
+                    <br>
+                    <div class="number-slider">
+                        <div class="value">
+                            <p class="range">Price</p>
+                        <span>Ghc <div class="Num"></div></span>
+                        </div>
+                        <input value="0"  step="1" type="number" class="range-slider price-slider">
+                    </div>
+                </div>
+                <br>
+                <div class="check-container">
+                    <div class="head">Amenities</div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1">
+                        Attended Lobby
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label" for="flexCheckDefault2">
+                            Concierge
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <label class="form-check-label" for="flexCheckDefault3">
+                            Fireplace
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <label class="form-check-label" for="flexCheckDefault4">
+                            Gym
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                        <label class="form-check-label" for="flexCheckDefault5">
+                            Outdoor Space
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                        <label class="form-check-label" for="flexCheckDefault6">
+                            Parking
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                        <label class="form-check-label" for="flexCheckDefault7">
+                            Pet Friendly
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                        <label class="form-check-label" for="flexCheckDefault8">
+                            Pool
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                        <label class="form-check-label" for="flexCheckDefault9">
+                            Views
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                        <label class="form-check-label" for="flexCheckDefault10">
+                            Washer / Drye
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="check-container">
+                    <div class="head">Options</div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                        <label class="form-check-label" for="flexCheckDefault11">
+                            New Listings Only
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                        <label class="form-check-label" for="flexCheckDefault12">
+                            Open Houses
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                        <label class="form-check-label" for="flexCheckDefault13">
+                            Sponsor Units
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                        <label class="form-check-label" for="flexCheckDefault14">
+                            Show Listings In Contract
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="btn-container filters">
+                    <div class="btnSearch">Search</div>
+                </div>
+                
+            </div>    
+        </div>
+        <br><br><br><br>
+    </div>
+    
+    <!-- ==== End Services === -->
+
+    <!-- ==== subscribe ==== -->
+    <div class="subscribe-container Text-Item">
+        <div class="container">
+            <div class="text-description">
+                <h2>subscribe</h2>
+                <p>Want to be notified about our News. Just sign up and we'll send you a notification by email.</p>
+            </div>
+            <div class="forms-container">
+                <div class="forms">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <div class="btn">send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== End subscribe ==== -->
+
+
+    <!-- ==== footer ==== -->
+    <footer class="footer-container Text-Item">
+        <div class="container">
+            <img src="./img/About-black.png" alt="">
+            <div class="footer-links">
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate aut voluptates ex ab porro debitis veniam aliquam! Ducimus reprehenderit delectus officia labore? Obcaecati consequatur, est blanditiis magni veritatis placeat.
+                    </div>
+                    <a href="#" class="btn">
+                        <p>read more</p>
+                        <span class="material-symbols-outlined">
+                            trending_flat
+                        </span>
+                        <br>
+                    </a>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="contact">
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            phone_enabled
+                        </span><p>phone : <span>+489756412322</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            mail
+                        </span><p>Email : <span>yourmail@domain.com</span></p>
+                        </div>
+                        <div class="item">
+                            <span class="material-symbols-outlined">
+                            location_on
+                        </span><p>Address : <span>USA 27TH Brooklyn NY</span></p>
+                        </div>
+                    </div>
+
+                    <div class="days-container">
+                        <div class="days">
+                            <p>monday - friday:</p>
+                            <span>8am - 6pm</span>
+                        </div>
+                        <div class="days">
+                            <p>saturday - sunday:</p>
+                            <span>9am - 3pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="link">
+                    <div class="color"></div>
+                    <div class="site-links">
+                        <ul>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Tiling and Painting</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">House Renovation</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Household Repairs</a></li>
+                            <li><a href="#">Design and Build</a></li>
+                            <li><a href="#">Interiror Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="footer-links2">
+                <div class="social-media">
+                    <p>Follow us:</p>
+                    <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div> 
+                </div>
+                <div class="buttons-container">
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            shopping_cart_checkout
+                        </span>
+                        <p>Download Pricing PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <span class="material-symbols-outlined icon">
+                            description
+                        </span>
+                        <p>company presentation PDF</p>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </footer>
+    <div class="copyright Text-Item">
+        <div class="container">
+            <div class="text-items">© <span> THEROOF </span> 2023. ALL RIGHTS RESERVED.</div>
+        <div class="links-items">
+            <a href="#">Terms of use</a>
+            <a href="#">privacy policy</a>
+            <a href="#">news</a>
+            <a href="#home">
+                <span class="material-symbols-outlined" id="home">
+                expand_less
+            </span>
+            </a>
+        </div>
+        </div>
+    </div>
+    <!-- ==== End footer ==== -->
+
+    <!-- ======= Pop-up Model ======== -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-container">
+            <div class="Modal" id="modal">
+                <div class="form-container">
+                    <form id="SignupForm">
+                    <div class="btn-container">
+                        <div class="login btn active" onclick="toggle(this, 1, 'One')">
+                            <span class="material-symbols-outlined">
+                                login
+                            </span>
+                            <p>login</p>
+                        </div>
+                        <div class="register btn" onclick="toggle(this, 2, 'Two')">
+                            <span class="material-symbols-outlined">
+                                how_to_reg
+                            </span>
+                            <p>register</p>
+                        </div>
+                    </div>
+                    <div class="signup-container One" style="display: block;">
+                        <div class="signup">
+                            <label for="email">Username or Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <div class="check-container">
+                            <div class="item">
+                                <input type="checkbox" id="rememberMe" name="rememberMe">
+                                <p>Remember me</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">Lost your password</a>
+                            </div>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">log in</button>
+                        </div>
+                        
+                    </div>
+                    <div class="signup-container Two">
+                        <div class="signup">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="name" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="signup">
+                            <label for="email">Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="signup">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div class="button-container" style="display: block;">
+                            <button class="register" type="submit">Register</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="text-container">
+                        <p>Or</p>
+                        <span>For faster login or register use your social account.</span>
+                    </div>
+                    
+                    <div class="Button-container">
+                        <button class="button">
+                        <i class="fab fa-facebook"></i>
+                        Connect with Facebook
+                        </button>
+                    </div>
+                    </form>
+
+
+                    <div class="close">
+                        <span class="material-symbols-outlined" id="CloseButton">
+                            close
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ======= End Pop-up Model ======== -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/Estate.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+
+    
+    <script>
+        // ===== Description ======
+        var activeContainer1 = 1;
+    
+        function toggle(container1, containerNumber1, contentId1) {
+        if (containerNumber1 !== activeContainer1) {
+            var activeContainerElement1 = document.querySelector('.btn.active');
+            if (activeContainerElement1) {
+            activeContainerElement1.classList.remove('active');
+            }
+            container1.classList.add('active');
+            activeContainer1 = containerNumber1;
+        }
+        
+        const content1 = document.getElementsByClassName('signup-container');
+        for (let i = 0; i < content1.length; i++) {
+            content1[i].style.display = 'none';
+        }
+        
+        const selectedContent1 = document.getElementsByClassName(contentId1);
+        if (selectedContent1.length > 0) {
+            selectedContent1[0].style.display = 'block';
+        
+        }
+        }
+        // ===== End Description ======
+
+    </script>
+
+    <script>
+        
+        // ****** Selctor ******
+    document.querySelectorAll('.select-menu').forEach(optionMenu => {
+    const selectBtn = optionMenu.querySelector('.select-btn');
+    const options = optionMenu.querySelectorAll('.option');
+    const sBtn_text = optionMenu.querySelector('.sBtn-text');
+
+    selectBtn.addEventListener('click', () => {
+        optionMenu.classList.toggle('active');
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            let selectedOption = option.querySelector('.option-text').innerText;
+            sBtn_text.innerText = selectedOption;
+            optionMenu.classList.remove('active');
+        });
+    });
+});
+
+
+    </script>
+
+    <!-- ===== Search functionality ===== -->
+    <script>
+        function filterAndAutocomplete() {
+            filterItems();
+            autocomplete();
+        }
+        
+        // Get reference to the search button
+        const searchButton = document.getElementById('searchButton');
+        
+        // Add click event listener to the search button
+        searchButton.addEventListener('click', function() {
+            filterAndAutocomplete();
+        });
+        
+        
+        function filterItems() {
+            // Declare variables
+            var input, filter, items, i, txtValue, foundMatch;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            items = document.querySelectorAll('.Text-Item'); // Selecting elements with the class "text-item"
+            const noMatchMessage = document.getElementById("noMatchMessage");
+        
+            // Loop through all items, and hide those that don't match the search query
+            for (i = 0; i < items.length; i++) {
+                txtValue = items[i].textContent || items[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    items[i].style.display = ""; // Show item
+                    foundMatch = true;
+                } else {
+                    items[i].style.display = "none"; // Hide item
+                }
+            }
+        
+            // Display a message if no matches are found
+            if (!foundMatch) {
+                noMatchMessage.textContent = "No matching Content found.";
+                noMatchMessage.style.display = "block";
+            } else {
+                noMatchMessage.style.display = "none";
+            }
+        }
+        
+        
+        function autocomplete() {
+            const autocompleteInput = document.getElementById("searchInput");
+            const resultsHTML = document.getElementById("results");
+            const data = ["subscribe", 
+                        "checkout page",
+                        "product page",
+                        "cart page",
+                        "home page",
+                        "news page",
+                        "project page",
+                        "about page",
+                        "contact page",
+                        "service page",
+                        "cost page"];
+        
+            let results = [];
+            const userInput = autocompleteInput.value;
+            resultsHTML.innerHTML = "";
+        
+            if (userInput.length > 0) {
+                results = getResults(userInput);
+                resultsHTML.style.display = "block";
+                for (let i = 0; i < results.length; i++) {
+                    resultsHTML.innerHTML += "<p>" + results[i] + "</p>";
+                }
+            }
+        
+            function getResults(input) {
+                const results = [];
+                for (let i = 0; i < data.length; i++) {
+                    if (input === data[i].slice(0, input.length)) {
+                        results.push(data[i]);
+                    }
+                }
+                return results;
+            }
+        
+            resultsHTML.onclick = function (event) {
+                const setValue = event.target.innerText;
+                autocompleteInput.value = setValue;
+                this.innerHTML = "";
+        
+                // Add logic to redirect to the corresponding page based on the search result
+                switch(setValue) {
+                    case 'home page':
+                        window.location.href = 'index.html';
+                        break;
+                    case 'news page':
+                        window.location.href = 'news.html';
+                        break;
+                    case 'project page':
+                        window.location.href = 'project.html';
+                        break;
+                    case 'about page':
+                        window.location.href = 'about.html';
+                        break;
+                    case 'contact page':
+                        window.location.href = 'contact.html';
+                        break;
+                    case 'cost page':
+                        window.location.href = 'cost.html';
+                        break;
+                    case 'checkout page':
+                        window.location.href = 'checkout.html';
+                        break;
+                    case 'product page':
+                        window.location.href = 'product.html';
+                        break;
+                    case 'cart page':
+                        window.location.href = 'cart.html';
+                        break;
+                    case 'service page':
+                        window.location.href = 'services.html';
+                        break;
+                    // Add more cases for other search results
+                    default:
+                        break;
+                }
+            };
+        }
+    </script>
+    <!-- ===== Search functionality ===== -->
+</body>
+</html>

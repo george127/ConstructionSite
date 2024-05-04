@@ -70,14 +70,16 @@
                     <li class="items dropdown"><a href="./services.html">
                         <p>services</p>
                     </a></li>
+                    <li class="items dropdown"><a href="./estate.html">
+                        <p>estate</p>
+                    </a></li>
                     <li class="items"><a href="./news.html">
                         <p>news</p>
                     </a></li>
                     <li class="items"><a href="./project.html">
                         <p>project</p>
                     </a></li>
-                    <li class="items dropdown"><a href="./contact.html
-                        ">
+                    <li class="items dropdown"><a href="./contact.html">
                         <p>contact</p>
                     </a></li>
                     
@@ -99,6 +101,9 @@
                         </a>
                         <a href="./services.html">
                             <p>services</p>
+                        </a>
+                        <a href="./estate.html">
+                            <p>estate</p>
                         </a>
                         <a href="./news.html">
                             <p>news</p>
@@ -188,10 +193,11 @@
                     </div>
                     <div id="dropdown-content3">
                         <div class="search-container">
-                            <input type="text" id="searchInput" onkeyup="filterAndAutocomplete()" class="search-input" placeholder="Search...">
+                            <input type="text" id="searchInput" onkeyup="filterAndAutocomplete()" class="searchInput" placeholder="Search...">
                             <ul id="results"></ul>
                             <button class="search-button" id="searchButton"><span class="material-symbols-outlined" id="icon3">search</span></button>
                         </div>
+                        
                     </div>
                 </div>
         
@@ -205,6 +211,7 @@
         </div>
     </nav>
     <!-- ==== End Nav === -->
+    
     <div class="container noMatch">
         <div id="noMatchMessage" style="display: none;"></div>
     </div>
@@ -315,7 +322,9 @@
                         <p>Register</p></a>
                 </div>
             </div>
-            <div id="map"></div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9380921681686!2d-0.29515118603715057!3d5.576171195957227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf990707c35f19%3A0xae1f391c20c3ca58!2sWest%20Atlantic%20College%20of%20Technology!5e0!3m2!1sen!2sgh!4v1679211039662!5m2!1sen!2sgh" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
         </div>
         <br><br>
@@ -586,68 +595,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg5Iqs12530OcDOU-n2XkL_xw8w2DcEuk&callback=initMap"
 async defer></script>
 
-<script>
-    var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 5.576740, lng: -0.309537}, // Coordinates for New York City
-    zoom: 12,
-    styles: [
-      {
-        "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#f5f5f5"
-          }
-        ]
-      },
-      {
-        "elementType": "labels.icon",
-        "stylers": [
-          {
-            "visibility": "off"
-          }
-        ]
-      },
-      {
-        "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#616161"
-          }
-        ]
-      },
-      {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-          {
-            "color": "#f5f5f5"
-          }
-        ]
-      },
-      {
-        "featureType": "administrative.land_parcel",
-        "elementType": "labels.text.fill",
-        "stylers": [
-          {
-            "color": "#bdbdbd"
-          }
-        ]
-      },
-      {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-          {
-            "color": "#eeeeee"
-          }
-        ]
-      },
-      // Add more custom styles as needed
-    ]
-  });
-}
-</script>
 
 <!-- ===== Search functionality ===== -->
 <script>
