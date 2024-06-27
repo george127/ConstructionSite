@@ -306,7 +306,7 @@
                             <div class="text">Area to be Renovated:</div>
                         </div>
                         <div class="range-container">
-                            <div class="r-slider"></div>
+                            <div class="r-slider Range1"></div>
                         </div>
                     </div>
 
@@ -316,7 +316,7 @@
                             <div class="text">Windows to Replace:</div>
                         </div>
                         <div class="range-container">
-                            <div class="r-slider" data-steps='[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]'></div>
+                            <div class="r-slider Range2" data-steps='[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]'></div>
                         </div>
                     </div>
 
@@ -363,7 +363,7 @@
                             <div class="text">Square Metres:</div>
                         </div>
                         <div class="range-container">
-                            <div class="r-slider"></div>
+                            <div class="r-slider Range3"></div>
                         </div>
                     </div>
 
@@ -406,7 +406,7 @@
 
                     <div class="calculator">
                     <div class="total-container">
-                        <p>Total $<span class="total">0.00</span></p>
+                        <p>Total $<span class="Total">0.00</span></p>
                     </div>
                     </div>
 
@@ -677,8 +677,35 @@
 
         
     // ***** Range *******
-    const s1 = document.getElementsByClassName('r-slider')[0];
-    s1.addEventListener('r-slider-updated', e => console.log('slider1', e.detail.value))
+    document.addEventListener('DOMContentLoaded', () => {
+    const totalElement = document.querySelector('.Total');
+    const range1 = document.querySelectorAll('.Range1')[0];
+    const range2 = document.querySelectorAll('.Range2')[0];
+    const range3 = document.querySelectorAll('.Range3')[0];
+
+    let value1 = 0;
+    let value2 = 0;
+    let value3 = 0;
+
+    const updateTotal = () =>{
+        const sum = value1 + value2 + value3;
+        totalElement.textContent = sum.toFixed();
+    }
+    
+    range1.addEventListener('r-slider-updated', e => {
+        value1 = e.detail.value;
+        console.log();
+        updateTotal();
+    });
+    range2.addEventListener('r-slider-updated', e => {
+        value2 = e.detail.value;
+        updateTotal();
+    });
+    range3.addEventListener('r-slider-updated', e => {
+        value3 = e.detail.value;
+        updateTotal();
+    });
+});
     
     
     // ****** Selctor ******
