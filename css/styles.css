@@ -604,6 +604,10 @@
     display: none;
   }
 
+  .nav .container .logo-container a {
+    font-size:  13px;
+  }
+
   #dropdown-content1,
   #dropdown-content2,
   #dropdown-content3 {
@@ -620,8 +624,8 @@
 }
 
 @media (max-width: 400px) {
-  .nav .container .logo-container a img {
-    width: 50px;
+    .nav .container .logo-container a {
+    font-size:  11px;
   }
 
   .nav .container .links-container .icons-container .icon {
