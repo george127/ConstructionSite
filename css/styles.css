@@ -605,7 +605,7 @@
   }
 
   .nav .container .logo-container a {
-    font-size:  13px;
+    font-size:  14px;
   }
 
   #dropdown-content1,
@@ -625,7 +625,7 @@
 
 @media (max-width: 400px) {
     .nav .container .logo-container a {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .nav .container .links-container .icons-container .icon {
