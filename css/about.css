@@ -811,7 +811,7 @@
     gap: 15px;
 }
 
-.container .Button-container .buttons .item .list .material-symbols-outlined{
+.container .Button-container .buttons .item .list .icon{
     padding: 25px 15px;
     background-color: #df962a;
     display: flex;
@@ -827,33 +827,125 @@
 }
 
 
-.container .Button-container .buttons .item:hover .list .material-symbols-outlined{
+.container .Button-container .buttons .item:hover .list .icon{
     background-color: #333;
     color: #df962a;
     box-shadow: none;
 }
 
-.container .Button-container .buttons .item .list .text{
+.container .Button-container .buttons .item .list .Text{
     font-size: 12px;
     line-height: 22px;
 }
 
-.container .Button-container .buttons .item .list .text h5{
+.container .Button-container .buttons .item .list .Text h5{
     font-size: 15px;
 }
 
-.container .Button-container .buttons .item .list .text .link{
+.container .Button-container .buttons .item .list .Text .link{
     color: #333;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 700ms ease-in-out;
     font-size: 10px;
+    cursor: pointer;
 }
 
-.container .Button-container .buttons .item .list .text .link:hover{
+.container .Button-container .buttons .item .list .Text .link:hover{
     color: #df962a;
 }
+
+.container .Button-container .buttons .item .list .modal {
+    background: #00000031;
+  }
+  
+  .container .Button-container .buttons .item .list .modal .modal-header {
+    padding: 0;
+    border: none;
+  }
+  
+  .container .Button-container .buttons .item .list .modal .modal-header .close {
+    margin-top: 80px;
+    margin-bottom: -80px;
+    margin-right: 60px;
+  }
+  
+  .container .Button-container .buttons .item .list .modal .modal-body {
+    display: inline-block;
+  }
+  
+  .container
+    .Button-container
+    .buttons
+    .item
+    .list
+    .modal
+    .modal-body
+    .header-text {
+    text-align: center;
+  }
+  
+  .container
+    .Button-container
+    .buttons
+    .item
+    .list
+    .modal
+    .modal-body
+    .header-text
+    h2 {
+    font-size: 30px;
+  }
+  
+  .container .Button-container .buttons .item .list .modal .modal-body .text h5 {
+    font-size: 17px;
+  }
+  
+  .container
+    .Button-container
+    .buttons
+    .item
+    .list
+    .modal
+    .modal-body
+    .header-text
+    .paragraph {
+    background-color: #fff0db;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .container
+    .Button-container
+    .buttons
+    .item
+    .list
+    .modal
+    .modal-body
+    .text
+    .paragraph {
+    background-color: #e6e6e6;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .container
+    .Button-container
+    .buttons
+    .item
+    .list
+    .modal
+    .modal-body
+    .text
+    .paragraph
+    p
+    span {
+    color: #df962a;
+    font-weight: bolder;
+  }
 
 .container .Button-container .buttons .item .num p{
     padding: 10px 15px;
@@ -872,6 +964,56 @@
         display: block;
     }
 }
+
+@media (max-width: 767px) {  
+    .container
+      .Button-container
+      .buttons
+      .item
+      .list
+      .modal
+      .modal-body
+      .header-text
+      h2 {
+      font-size: 20px;
+    }
+  
+    .container
+      .Button-container
+      .buttons
+      .item
+      .list
+      .modal
+      .modal-body
+      .text
+      h5 {
+      font-size: 14px;
+    }
+  
+    .container
+      .Button-container
+      .buttons
+      .item
+      .list
+      .modal
+      .modal-body
+      .header-text
+      .paragraph {
+      font-size: 13px;
+    }
+  
+    .container
+      .Button-container
+      .buttons
+      .item
+      .list
+      .modal
+      .modal-body
+      .text
+      .paragraph {
+      font-size: 13px;
+    }
+  }
 
 @media(max-width: 480px){
     .container .Button-container .buttons .item .list .material-symbols-outlined{
@@ -947,7 +1089,7 @@
     display: flex;
     align-items: center;
     width: 210px;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .container .our-story .btn-container .Btn span{
