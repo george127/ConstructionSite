@@ -1123,6 +1123,57 @@
     transition: all 200ms ease-in-out;
 }
 
+/* ==== model pop ==== */
+.container .our-story .modal {
+    background: #00000031;
+  }
+  
+  .our-story .modal .modal-header {
+    padding: 0;
+    border: none;
+  }
+  
+  .our-story .modal .modal-header .close {
+    margin-top: 80px;
+    margin-right: 60px;
+  }
+  
+  .our-story .modal .modal-body {
+    display: inline-block;
+  }
+  
+  .our-story .modal .modal-body .header-text {
+    text-align: center;
+  }
+  
+  .our-story .modal .modal-body .header-text h2 {
+    font-size: 30px;
+  }
+  
+  .our-story .modal .modal-body .text h5 {
+    font-size: 17px;
+  }
+  
+  .our-story .modal .modal-body .header-text .paragraph {
+    background-color: #fff0db;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .our-story .modal .modal-body .text .paragraph {
+    background-color: #e6e6e6;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .our-story .modal .modal-body .text .paragraph p span {
+    color: #df962a;
+    font-weight: bolder;
+  }
+/* ==== end model pop ==== */
+
 .container .list-container{
     width: 50%;
     position: relative;
@@ -1759,7 +1810,6 @@
 .footer-links .link .contact .item p{
     color: #df962a;
     font-size: 12px;
-    text-transform: capitalize;
     font-weight: 500;
     margin: 0;
     display: flex;
