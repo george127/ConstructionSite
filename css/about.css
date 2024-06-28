@@ -608,6 +608,10 @@
     display: none;
   }
 
+  .nav .container .logo-container a {
+    font-size: 14px;
+  }
+
   #dropdown-content1,
   #dropdown-content2,
   #dropdown-content3 {
@@ -624,8 +628,8 @@
 }
 
 @media (max-width: 400px) {
-  .nav .container .logo-container a img {
-    width: 50px;
+  .nav .container .logo-container a {
+    font-size: 13px;
   }
 
   .nav .container .links-container .icons-container .icon {
@@ -1205,6 +1209,24 @@
 .our-story .modal .modal-body .text .paragraph p span {
   color: #df962a;
   font-weight: bolder;
+}
+
+@media (max-width: 767px) {
+  .our-story .modal .modal-body .header-text h2 {
+    font-size: 20px;
+  }
+
+  .our-story .modal .modal-body .text h5 {
+    font-size: 14px;
+  }
+
+  .our-story .modal .modal-body .header-text .paragraph {
+    font-size: 13px;
+  }
+
+  .our-story .modal .modal-body .text .paragraph {
+    font-size: 13px;
+  }
 }
 /* ==== end model pop ==== */
 
